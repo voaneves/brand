@@ -1,0 +1,38 @@
+name: Proposta de Mudança de Marca
+description: Solicitar inclusão ou alteração de token, componente, ícone ou regra visual em @voaneves/brand.
+title: "feat(brand): "
+labels: ["brand-change"]
+body:
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impacto Semver Esperado (ADR 0003)
+      options:
+        - PATCH (correção / documentação)
+        - MINOR (adição ou ajuste compatível)
+        - MAJOR (remoção, renomeação ou quebra)
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Contexto e Motivação
+      description: Qual necessidade do produto ou auditoria visual origina esta mudança?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Especificação Proposta
+      description: Tokens, classes `.vn-*`, variantes ou arquivos impactados.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Conformidade
+      options:
+        - label: Preserva contraste mínimo WCAG 2.2 AA (>= 4.5:1)
+          required: true
+        - label: Respeita orçamento de fontes (<= 60 KB) e cursor (<= 1.5 KB gz)
+          required: false

@@ -1,0 +1,12 @@
+# 09 — Padrões de Interação
+
+Módulos ES independentes sem dependências externas em `dist/js/*.js`.
+
+## Módulos Disponíveis
+
+- `cursor.js` (`initCursor`): Cursor customizado por suavização exponencial (`tauDot: 30ms`, `tauLens: 90ms`), desativado em ponteiros grossos e movimento reduzido; <= `1.5 KB` gzip.
+- `magnetic.js` (`initMagnetic`): Atração magnética sutil em elementos `[data-magnetic]`.
+- `reveal.js` (`initReveal`): Revelação progressiva em scroll via `IntersectionObserver`.
+- `theme.js` (`initTheme`, `setTheme`, `toggleTheme`): Sincronização entre `localStorage` (`vn-theme`), preferência do sistema e `data-theme`.
+- `marquee.js` (`initMarquee`): Faixa contínua pausável via ponteiro ou foco de teclado.
+- `journey.js` (`initJourney`): Exposição da variável `--vn-journey-progress` (`0..1`) conforme scroll.

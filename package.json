@@ -1,6 +1,6 @@
 {
   "name": "@voaneves/brand",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": false,
   "description": "Victor Neves brand identity and design system: tokens, CSS, JS, fonts, icons and logo.",
   "type": "module",
@@ -19,6 +19,7 @@
   "files": [
     "dist",
     "fonts/*.woff2",
+    "fonts/OFL-*.txt",
     "astro",
     "LICENSES.md"
   ],
@@ -58,13 +59,14 @@
     "provenance": true
   },
   "scripts": {
-    "build": "node -e \"console.log('TODO: build (M1)')\"",
+    "build": "npm run build:tokens && npm run build:fonts && npm run build:icons && npm run build:css && npm run build:board",
     "build:tokens": "node scripts/build-tokens.mjs",
     "build:css": "node scripts/build-css.mjs",
     "build:icons": "node scripts/normalize-icons.mjs && node scripts/build-icons.mjs",
     "build:fonts": "node scripts/build-fonts.mjs",
-    "build:board": "node -e \"console.log('TODO: build:board (M1)')\"",
-    "test": "node --test tests/*.test.js"
+    "build:board": "node scripts/build-board.mjs",
+    "check:exports": "node scripts/check-exports.mjs",
+    "test": "node --test tests/*.test.js && npm run check:exports"
   },
   "devDependencies": {
     "style-dictionary": "^5.8.0",
