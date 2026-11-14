@@ -40,7 +40,7 @@
     "build": "node -e \"console.log('TODO: build (M1)')\"",
     "build:tokens": "node -e \"console.log('TODO: build:tokens (M1)')\"",
     "build:css": "node -e \"console.log('TODO: build:css (M1)')\"",
-    "build:icons": "node -e \"console.log('TODO: build:icons (M1)')\"",
+    "build:icons": "node scripts/normalize-icons.mjs",
     "build:fonts": "node -e \"console.log('TODO: build:fonts (M1)')\"",
     "build:board": "node -e \"console.log('TODO: build:board (M1)')\"",
     "test": "node -e \"console.log('TODO: test (M1)')\""
