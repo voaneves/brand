@@ -1,0 +1,281 @@
+{
+  "ref": {
+    "color": {
+      "$description": "Primitive palette. Private: only sys tokens may alias these. CSS: --vn-ref-<name>-<step> (category dropped).",
+      "ink": {
+        "900": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.102,
+              0.102,
+              0.102
+            ],
+            "hex": "#1a1a1a"
+          },
+          "$description": "Ink step 900 (dark raised ground)."
+        },
+        "925": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0784,
+              0.0784,
+              0.0784
+            ],
+            "hex": "#141414"
+          },
+          "$description": "Ink step 925 (dark raised ground)."
+        },
+        "950": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0392,
+              0.0392,
+              0.0392
+            ],
+            "hex": "#0a0a0a"
+          },
+          "$description": "Tinta. Ink text and the dark ground."
+        },
+        "1000": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "hex": "#000000"
+          },
+          "$description": "Pure black. Inverse chapters in dark theme."
+        }
+      },
+      "white": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "hex": "#ffffff"
+        },
+        "$description": "White. Banned on Sinal (below 4.5:1)."
+      },
+      "cream": {
+        "100": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9569,
+              0.9176,
+              0.8314
+            ],
+            "hex": "#f4ead4"
+          },
+          "$description": "Creme. Paper and light ground."
+        },
+        "200": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9373,
+              0.8941,
+              0.7725
+            ],
+            "hex": "#efe4c5"
+          },
+          "$description": "Cream step 200."
+        },
+        "300": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9098,
+              0.8706,
+              0.7725
+            ],
+            "hex": "#e8dec5"
+          },
+          "$description": "Cream step 300. Text on dark grounds."
+        }
+      },
+      "sand": {
+        "500": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.651,
+              0.6118,
+              0.5255
+            ],
+            "hex": "#a69c86"
+          },
+          "$description": "Sand step 500."
+        },
+        "600": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.5412,
+              0.5059,
+              0.4392
+            ],
+            "hex": "#8a8170"
+          },
+          "$description": "Sand step 600."
+        },
+        "700": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4784,
+              0.4392,
+              0.3608
+            ],
+            "hex": "#7a705c"
+          },
+          "$description": "Sand step 700. Line strong on light grounds."
+        },
+        "800": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.3608,
+              0.3294,
+              0.2745
+            ],
+            "hex": "#5c5446"
+          },
+          "$description": "Sand step 800. Muted text on light grounds."
+        }
+      },
+      "red": {
+        "400": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.3529,
+              0.3529
+            ],
+            "hex": "#ff5a5a"
+          },
+          "$description": "Red step 400."
+        },
+        "450": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.2196,
+              0.2196
+            ],
+            "hex": "#ff3838"
+          },
+          "$description": "Sinal lifted for dark grounds."
+        },
+        "500": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.1647,
+              0.1647
+            ],
+            "hex": "#ff2a2a"
+          },
+          "$description": "Red step 500."
+        },
+        "600": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9608,
+              0,
+              0
+            ],
+            "hex": "#f50000"
+          },
+          "$description": "Sinal. The single accent."
+        },
+        "800": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7216,
+              0,
+              0
+            ],
+            "hex": "#b80000"
+          },
+          "$description": "Signal ink. Sinal as text or border on light grounds."
+        }
+      },
+      "alpha": {
+        "$description": "Translucent primitives for hairlines.",
+        "ink-12": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0392,
+              0.0392,
+              0.0392
+            ],
+            "hex": "#0a0a0a",
+            "alpha": 0.12
+          },
+          "$description": "Ink at 12% (hairline on light)."
+        },
+        "cream-12": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9098,
+              0.8706,
+              0.7725
+            ],
+            "hex": "#e8dec5",
+            "alpha": 0.12
+          },
+          "$description": "Cream-300 at 12% (hairline on dark)."
+        },
+        "white-14": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "hex": "#ffffff",
+            "alpha": 0.14
+          },
+          "$description": "White at 14% (hairline on inverse)."
+        }
+      }
+    }
+  }
+}

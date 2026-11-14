@@ -1,0 +1,116 @@
+{
+  "cursor": {
+    "$description": "Sinal cursor (fine pointers, no reduced motion).",
+    "dot": {
+      "size": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        },
+        "$description": "Follower dot diameter."
+      }
+    },
+    "lens": {
+      "size": {
+        "$root": {
+          "$type": "dimension",
+          "$value": {
+            "value": 56,
+            "unit": "px"
+          },
+          "$description": "Lens diameter on links."
+        },
+        "on-signal": {
+          "$type": "dimension",
+          "$value": {
+            "value": 44,
+            "unit": "px"
+          },
+          "$description": "Ink ring diameter on Sinal ground."
+        }
+      }
+    },
+    "media": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 320,
+          "unit": "px"
+        },
+        "$description": "Media preview width."
+      },
+      "height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 220,
+          "unit": "px"
+        },
+        "$description": "Media preview height."
+      },
+      "radius": {
+        "$type": "dimension",
+        "$value": "{radius.md}",
+        "$description": "Media preview radius."
+      }
+    },
+    "fade": {
+      "$type": "duration",
+      "$value": {
+        "value": 150,
+        "unit": "ms"
+      },
+      "$description": "Show/hide fade."
+    },
+    "scale": {
+      "pressed": {
+        "$type": "number",
+        "$value": 0.85,
+        "$description": "Scale while pointer is down."
+      }
+    },
+    "tau": {
+      "dot": {
+        "$type": "duration",
+        "$value": {
+          "value": 30,
+          "unit": "ms"
+        },
+        "$description": "Easing time constant of the dot."
+      },
+      "lens": {
+        "$type": "duration",
+        "$value": {
+          "value": 90,
+          "unit": "ms"
+        },
+        "$description": "Easing time constant of the lens."
+      },
+      "label": {
+        "$type": "duration",
+        "$value": {
+          "value": 150,
+          "unit": "ms"
+        },
+        "$description": "Easing time constant of the label."
+      }
+    },
+    "z": {
+      "$root": {
+        "$type": "number",
+        "$value": "{z.cursor}",
+        "$description": "Stacking layer of the cursor."
+      },
+      "media": {
+        "$type": "number",
+        "$value": "{z.cursor-media}",
+        "$description": "Media preview layer."
+      },
+      "label": {
+        "$type": "number",
+        "$value": "{z.cursor-label}",
+        "$description": "Label layer."
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "opacity": {
+    "$description": "Opacity values.",
+    "disabled": {
+      "$type": "number",
+      "$value": 0.45,
+      "$description": "Disabled state for every interactive component (aria-disabled)."
+    },
+    "link-rest": {
+      "$type": "number",
+      "$value": 0.75,
+      "$description": "Link at rest."
+    },
+    "glass": {
+      "$type": "number",
+      "$value": 0.7,
+      "$description": "Glass surfaces."
+    },
+    "scrim": {
+      "$type": "number",
+      "$value": 0.6,
+      "$description": "Scrim behind modals."
+    }
+  },
+  "z": {
+    "$description": "Stacking layers.",
+    "raised": {
+      "$type": "number",
+      "$value": 2,
+      "$description": "Raised elements."
+    },
+    "nav": {
+      "$type": "number",
+      "$value": 50,
+      "$description": "Sticky navigation."
+    },
+    "drawer": {
+      "$type": "number",
+      "$value": 200,
+      "$description": "Navigation drawer."
+    },
+    "cursor-media": {
+      "$type": "number",
+      "$value": 9997,
+      "$description": "Cursor media preview."
+    },
+    "cursor-label": {
+      "$type": "number",
+      "$value": 9998,
+      "$description": "Cursor label."
+    },
+    "cursor": {
+      "$type": "number",
+      "$value": 9999,
+      "$description": "Custom cursor; above everything."
+    }
+  }
+}

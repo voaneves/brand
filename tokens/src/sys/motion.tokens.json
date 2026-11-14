@@ -1,0 +1,108 @@
+{
+  "ease": {
+    "$description": "Easing curves.",
+    "out": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.22,
+        0.61,
+        0.36,
+        1
+      ],
+      "$description": "Default easing: hovers, reveals, drawer."
+    },
+    "spring": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.34,
+        1.56,
+        0.64,
+        1
+      ],
+      "$description": "Overshoot for magnetic CTA release."
+    },
+    "in-out": {
+      "$type": "cubicBezier",
+      "$value": [
+        0.65,
+        0,
+        0.35,
+        1
+      ],
+      "$description": "Symmetric easing: image unveil."
+    }
+  },
+  "dur": {
+    "$description": "Durations. Under prefers-reduced-motion every dur token becomes 1ms (not 0, so animationend fires).",
+    "$extensions": {
+      "vn": {
+        "reducedMotion": "1ms"
+      }
+    },
+    "press": {
+      "$type": "duration",
+      "$value": {
+        "value": 120,
+        "unit": "ms"
+      },
+      "$description": "Press feedback (:active scale)."
+    },
+    "hover": {
+      "$type": "duration",
+      "$value": {
+        "value": 250,
+        "unit": "ms"
+      },
+      "$description": "Hover transitions and nav text roll."
+    },
+    "cursor": {
+      "$type": "duration",
+      "$value": {
+        "value": 450,
+        "unit": "ms"
+      },
+      "$description": "Cursor settle time."
+    },
+    "line": {
+      "$type": "duration",
+      "$value": {
+        "value": 800,
+        "unit": "ms"
+      },
+      "$description": "Masked line reveal, per line."
+    },
+    "unveil": {
+      "$type": "duration",
+      "$value": {
+        "value": 1200,
+        "unit": "ms"
+      },
+      "$description": "Image unveil clip and scale."
+    },
+    "page": {
+      "$type": "duration",
+      "$value": {
+        "value": 250,
+        "unit": "ms"
+      },
+      "$description": "Cross-document view transition fade."
+    }
+  },
+  "stagger": {
+    "line": {
+      "$type": "duration",
+      "$value": {
+        "value": 80,
+        "unit": "ms"
+      },
+      "$description": "Delay step between reveal lines (multiplied by --i)."
+    }
+  },
+  "scale": {
+    "press": {
+      "$type": "number",
+      "$value": 0.94,
+      "$description": "Scale on :active for interactive components."
+    }
+  }
+}

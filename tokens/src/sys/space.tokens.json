@@ -1,0 +1,162 @@
+{
+  "space": {
+    "1": {
+      "$type": "dimension",
+      "$value": "{ref.space.4}",
+      "$description": "Step 1, 4px."
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": "{ref.space.8}",
+      "$description": "Step 2, 8px."
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "{ref.space.12}",
+      "$description": "Step 3, 12px."
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "{ref.space.16}",
+      "$description": "Step 4, 16px."
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": "{ref.space.24}",
+      "$description": "Step 5, 24px."
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "{ref.space.32}",
+      "$description": "Step 6, 32px."
+    },
+    "7": {
+      "$type": "dimension",
+      "$value": "{ref.space.40}",
+      "$description": "Step 7, 40px."
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "{ref.space.48}",
+      "$description": "Step 8, 48px."
+    },
+    "9": {
+      "$type": "dimension",
+      "$value": "{ref.space.64}",
+      "$description": "Step 9, 64px. Named \"beat\"."
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": "{ref.space.80}",
+      "$description": "Step 10, 80px."
+    },
+    "11": {
+      "$type": "dimension",
+      "$value": "{ref.space.96}",
+      "$description": "Step 11, 96px."
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "{ref.space.128}",
+      "$description": "Step 12, 128px. Named \"breath\"."
+    },
+    "13": {
+      "$type": "dimension",
+      "$value": "{ref.space.160}",
+      "$description": "Step 13, 160px."
+    },
+    "14": {
+      "$type": "dimension",
+      "$value": "{ref.space.256}",
+      "$description": "Step 14, 256px. Named \"pause\"."
+    },
+    "$description": "Spacing scale, 8px base with a 4px half-step. Steps 1-14.",
+    "beat": {
+      "$type": "dimension",
+      "$value": "{space.9}",
+      "$description": "Alias of space-9 (64px). Section rhythm unit."
+    },
+    "breath": {
+      "$type": "dimension",
+      "$value": "{space.12}",
+      "$description": "Alias of space-12 (128px). Large section gap."
+    },
+    "pause": {
+      "$type": "dimension",
+      "$value": "{space.14}",
+      "$description": "Alias of space-14 (256px). Chapter gap."
+    }
+  },
+  "layout": {
+    "$description": "Layout tokens. pad-x and pad-y are fluid between min and max.",
+    "pad-x": {
+      "min": {
+        "$type": "dimension",
+        "$value": "{ref.space.20}",
+        "$description": "Horizontal page padding at narrow viewports (20px)."
+      },
+      "max": {
+        "$type": "dimension",
+        "$value": "{space.9}",
+        "$description": "Horizontal page padding at wide viewports (64px)."
+      }
+    },
+    "pad-y": {
+      "min": {
+        "$type": "dimension",
+        "$value": {
+          "value": 60,
+          "unit": "px"
+        },
+        "$description": "Vertical section padding at narrow viewports (60px)."
+      },
+      "max": {
+        "$type": "dimension",
+        "$value": {
+          "value": 140,
+          "unit": "px"
+        },
+        "$description": "Vertical section padding at wide viewports (140px)."
+      }
+    },
+    "gutter-sm": {
+      "$type": "dimension",
+      "$value": "{space.4}",
+      "$description": "Small gutter (16px)."
+    },
+    "gutter-md": {
+      "$type": "dimension",
+      "$value": "{space.5}",
+      "$description": "Medium gutter (24px)."
+    },
+    "gutter-lg": {
+      "$type": "dimension",
+      "$value": "{space.6}",
+      "$description": "Large gutter (32px)."
+    },
+    "container-max": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1500,
+        "unit": "px"
+      },
+      "$description": "Maximum container width."
+    },
+    "measure": {
+      "$type": "dimension",
+      "$value": {
+        "value": 640,
+        "unit": "px"
+      },
+      "$description": "Reading measure."
+    },
+    "touch-min": {
+      "$type": "dimension",
+      "$value": {
+        "value": 44,
+        "unit": "px"
+      },
+      "$description": "Minimum touch target."
+    }
+  }
+}

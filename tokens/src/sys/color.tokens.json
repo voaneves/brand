@@ -1,0 +1,265 @@
+{
+  "color": {
+    "$description": "Semantic colors. Light in $value, dark in $extensions.vn.dark (both aliases). Source: docs/spec-values.md.",
+    "ink": {
+      "$type": "color",
+      "$value": "{ref.color.ink.950}",
+      "$description": "Tinta. Logo black, inverse bands, text on Creme. Same in both themes.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.ink.950}"
+        }
+      }
+    },
+    "ink-soft": {
+      "$type": "color",
+      "$value": "{ref.color.ink.900}",
+      "$description": "Raised dark surfaces. Same in both themes.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.ink.900}"
+        }
+      }
+    },
+    "cream": {
+      "$type": "color",
+      "$value": "{ref.color.cream.100}",
+      "$description": "Creme. Paper ground. Same in both themes.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.cream.100}"
+        }
+      }
+    },
+    "cream-soft": {
+      "$type": "color",
+      "$value": "{ref.color.cream.200}",
+      "$description": "Alternate band, cards on Creme. Same in both themes.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.cream.200}"
+        }
+      }
+    },
+    "signal": {
+      "$type": "color",
+      "$value": "{ref.color.red.600}",
+      "$description": "Fills, wordmark full stop, dots, focus ring. Text only at 24px+ on light grounds (3.60:1); small text OK on Tinta (4.60) and dark grounds (5.54). Dark lifts to #ff3838.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.red.450}"
+        }
+      }
+    },
+    "signal-2": {
+      "$type": "color",
+      "$value": "{ref.color.red.500}",
+      "$description": "CTA dot and glow only.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.red.400}"
+        }
+      }
+    },
+    "signal-ink": {
+      "$type": "color",
+      "$value": "{ref.color.red.800}",
+      "$description": "Small red text (links, errors, section numbers) on surface, soft and raised. Field invalid border.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.red.400}"
+        }
+      }
+    },
+    "surface": {
+      "$type": "color",
+      "$value": "{color.cream}",
+      "$description": "Page ground.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.ink}"
+        }
+      }
+    },
+    "surface-soft": {
+      "$type": "color",
+      "$value": "{color.cream-soft}",
+      "$description": "Alternate band, cards.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.ink.925}"
+        }
+      }
+    },
+    "surface-raised": {
+      "$type": "color",
+      "$value": "{ref.color.white}",
+      "$description": "Inputs, dropdowns, popovers.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.ink-soft}"
+        }
+      }
+    },
+    "surface-inverse": {
+      "$type": "color",
+      "$value": "{color.ink}",
+      "$description": "Inverse chapters and featured cards. Dark goes to pure black.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.ink.1000}"
+        }
+      }
+    },
+    "surface-signal": {
+      "$type": "color",
+      "$value": "{color.signal}",
+      "$description": "Contact band, signal button. Resolves to #f50000 light, #ff3838 dark; only ink text reads on it.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.signal}"
+        }
+      }
+    },
+    "text": {
+      "$type": "color",
+      "$value": "{color.ink}",
+      "$description": "All text on surface, soft and raised. Dark: cream-300, never pure white.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.cream.300}"
+        }
+      }
+    },
+    "text-muted": {
+      "$type": "color",
+      "$value": "{ref.color.sand.800}",
+      "$description": "Captions, meta.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.sand.500}"
+        }
+      }
+    },
+    "text-on-inverse": {
+      "$type": "color",
+      "$value": "{color.cream}",
+      "$description": "Text on surface-inverse.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.cream.300}"
+        }
+      }
+    },
+    "text-muted-on-inverse": {
+      "$type": "color",
+      "$value": "{ref.color.sand.500}",
+      "$description": "Meta on surface-inverse.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.sand.500}"
+        }
+      }
+    },
+    "text-on-signal": {
+      "$type": "color",
+      "$value": "{color.ink}",
+      "$description": "Every size of text on Sinal; never white or Creme.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.ink}"
+        }
+      }
+    },
+    "line": {
+      "$type": "color",
+      "$value": "{ref.color.alpha.ink-12}",
+      "$description": "Decorative hairlines.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.alpha.cream-12}"
+        }
+      }
+    },
+    "line-strong": {
+      "$type": "color",
+      "$value": "{ref.color.sand.700}",
+      "$description": "Input borders, meaningful outlines (3:1 or more).",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.sand.600}"
+        }
+      }
+    },
+    "line-on-dark": {
+      "$type": "color",
+      "$value": "{ref.color.alpha.white-14}",
+      "$description": "Hairlines on inverse.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.alpha.white-14}"
+        }
+      }
+    },
+    "focus": {
+      "$type": "color",
+      "$value": "{color.signal}",
+      "$description": "2px solid focus ring, offset 4px (inputs 2px).",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.signal}"
+        }
+      }
+    },
+    "focus-on-signal": {
+      "$type": "color",
+      "$value": "{color.ink}",
+      "$description": "Focus ring on Sinal.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.ink}"
+        }
+      }
+    },
+    "viz-1": {
+      "$type": "color",
+      "$value": "{color.signal}",
+      "$description": "Chart series 1.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.signal}"
+        }
+      }
+    },
+    "viz-2": {
+      "$type": "color",
+      "$value": "{color.text}",
+      "$description": "Chart series 2.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.text}"
+        }
+      }
+    },
+    "viz-3": {
+      "$type": "color",
+      "$value": "{color.line-strong}",
+      "$description": "Chart series 3.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.line-strong}"
+        }
+      }
+    },
+    "viz-grid": {
+      "$type": "color",
+      "$value": "{color.line}",
+      "$description": "Chart grid lines.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.line}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "drawer": {
+    "$description": "Modal navigation drawer.",
+    "link-height": {
+      "$type": "dimension",
+      "$value": {
+        "value": 56,
+        "unit": "px"
+      },
+      "$description": "Minimum link height."
+    },
+    "duration": {
+      "$type": "duration",
+      "$value": {
+        "value": 450,
+        "unit": "ms"
+      },
+      "$description": "Open transition (translate 100% to 0)."
+    }
+  }
+}

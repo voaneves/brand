@@ -1,0 +1,185 @@
+{
+  "button": {
+    "$description": "Button. Variants signal|primary|secondary|ghost; sizes sm|md|lg|xl. Label uses the label type style. Active: scale-active. Focus: focus-width ring in color.focus, offset focus-offset. Disabled: opacity.disabled. Secondary background is transparent (no token).",
+    "signal": {
+      "bg": {
+        "$root": {
+          "$type": "color",
+          "$value": "{color.surface-signal}",
+          "$description": "Signal button background (one per view)."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.ink}",
+          "$description": "Signal background on hover."
+        }
+      },
+      "fg": {
+        "$root": {
+          "$type": "color",
+          "$value": "{color.text-on-signal}",
+          "$description": "Signal label; ink on Sinal."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.cream}",
+          "$description": "Signal label on hover; cream on ink."
+        }
+      },
+      "dot": {
+        "$type": "color",
+        "$value": "{color.ink}",
+        "$description": "Signal button dot."
+      }
+    },
+    "primary": {
+      "bg": {
+        "$root": {
+          "$type": "color",
+          "$value": "{color.ink}",
+          "$description": "Primary background (Tinta)."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.signal}",
+          "$description": "Primary background on hover."
+        }
+      },
+      "fg": {
+        "$root": {
+          "$type": "color",
+          "$value": "{color.cream}",
+          "$description": "Primary label."
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "{color.ink}",
+          "$description": "Primary label on hover; ink on Sinal (4.60:1)."
+        }
+      },
+      "dot": {
+        "$type": "color",
+        "$value": "{color.signal-2}",
+        "$description": "Primary dot; carries dot-shadow."
+      },
+      "dot-shadow": {
+        "$type": "shadow",
+        "$value": "{shadow.dot}",
+        "$description": "Glow of the primary dot."
+      },
+      "hover-offset-y": {
+        "$type": "dimension",
+        "$value": {
+          "value": -1,
+          "unit": "px"
+        },
+        "$description": "translateY on hover."
+      }
+    },
+    "secondary": {
+      "border": {
+        "$type": "color",
+        "$value": "{color.text}",
+        "$description": "Secondary 1.5px border."
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "{color.text}",
+        "$description": "Secondary label."
+      }
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": "{radius.pill}",
+      "$description": "Button corner radius."
+    },
+    "height": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "$description": "Small height; hit area extended to 44 via ::after inset -6px."
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 40,
+          "unit": "px"
+        },
+        "$description": "Medium height."
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        },
+        "$description": "Large height."
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": {
+          "value": 56,
+          "unit": "px"
+        },
+        "$description": "Extra large height."
+      }
+    },
+    "padding": {
+      "md": {
+        "start": {
+          "$type": "dimension",
+          "$value": {
+            "value": 22,
+            "unit": "px"
+          },
+          "$description": "md left padding."
+        },
+        "end": {
+          "$type": "dimension",
+          "$value": {
+            "value": 18,
+            "unit": "px"
+          },
+          "$description": "md right padding."
+        }
+      }
+    },
+    "border-width": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1.5,
+        "unit": "px"
+      },
+      "$description": "Secondary border width."
+    },
+    "focus-width": {
+      "$type": "dimension",
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      },
+      "$description": "Focus ring width."
+    },
+    "focus-offset": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      },
+      "$description": "Focus ring offset."
+    },
+    "scale-active": {
+      "$type": "number",
+      "$value": 0.94,
+      "$description": "Scale on :active."
+    },
+    "opacity-disabled": {
+      "$type": "number",
+      "$value": "{opacity.disabled}",
+      "$description": "Disabled opacity."
+    }
+  }
+}

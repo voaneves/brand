@@ -1,0 +1,17 @@
+{
+  "field": {
+    "$description": "Input, textarea, select.",
+    "border": {
+      "$root": {
+        "$type": "color",
+        "$value": "{color.line-strong}",
+        "$description": "Field border; at least 3:1 on surface."
+      },
+      "invalid": {
+        "$type": "color",
+        "$value": "{color.signal-ink}",
+        "$description": "Border when invalid."
+      }
+    }
+  }
+}

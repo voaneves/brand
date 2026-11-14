@@ -1,0 +1,71 @@
+{
+  "radius": {
+    "$description": "Corner radii.",
+    "xs": {
+      "$type": "dimension",
+      "$value": {
+        "value": 6,
+        "unit": "px"
+      },
+      "$description": "Small chips and tags."
+    },
+    "sm": {
+      "$type": "dimension",
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      },
+      "$description": "Small controls."
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": {
+        "value": 14,
+        "unit": "px"
+      },
+      "$description": "Inputs."
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": {
+        "value": 20,
+        "unit": "px"
+      },
+      "$description": "Large controls."
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      },
+      "$description": "Cards."
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": {
+        "value": 28,
+        "unit": "px"
+      },
+      "$description": "Hero and media."
+    },
+    "pill": {
+      "$type": "dimension",
+      "$value": {
+        "value": 999,
+        "unit": "px"
+      },
+      "$description": "Fully rounded ends: buttons, chips, pills."
+    },
+    "round": {
+      "$type": "number",
+      "$value": 50,
+      "$description": "Circle: border-radius 50%. DTCG has no percent dimension, so the build appends the unit from $extensions.vn.unit.",
+      "$extensions": {
+        "vn": {
+          "unit": "%"
+        }
+      }
+    }
+  }
+}

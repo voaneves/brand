@@ -1,0 +1,21 @@
+{
+  "icon-button": {
+    "$description": "Round icon button.",
+    "size": {
+      "$type": "dimension",
+      "$value": {
+        "value": 44,
+        "unit": "px"
+      },
+      "$description": "Width and height (target size)."
+    },
+    "border-width": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1,
+        "unit": "px"
+      },
+      "$description": "currentColor border."
+    }
+  }
+}

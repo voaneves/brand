@@ -1,0 +1,18 @@
+{
+  "chip": {
+    "$description": "Pill chip with mono label.",
+    "height": {
+      "$type": "dimension",
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      },
+      "$description": "Chip height."
+    },
+    "radius": {
+      "$type": "dimension",
+      "$value": "{radius.pill}",
+      "$description": "Chip radius."
+    }
+  }
+}

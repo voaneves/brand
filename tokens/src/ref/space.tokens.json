@@ -1,0 +1,127 @@
+{
+  "ref": {
+    "space": {
+      "4": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 4px."
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 8px."
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 12px."
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 16px."
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": {
+          "value": 20,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 20px."
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 24px."
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": {
+          "value": 32,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 32px."
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": {
+          "value": 40,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 40px."
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": {
+          "value": 48,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 48px."
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": {
+          "value": 64,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 64px."
+      },
+      "80": {
+        "$type": "dimension",
+        "$value": {
+          "value": 80,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 80px."
+      },
+      "96": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 96px."
+      },
+      "128": {
+        "$type": "dimension",
+        "$value": {
+          "value": 128,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 128px."
+      },
+      "160": {
+        "$type": "dimension",
+        "$value": {
+          "value": 160,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 160px."
+      },
+      "256": {
+        "$type": "dimension",
+        "$value": {
+          "value": 256,
+          "unit": "px"
+        },
+        "$description": "Spacing primitive, 256px."
+      },
+      "$description": "Spacing primitives (px), named by value."
+    }
+  }
+}

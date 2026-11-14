@@ -1,0 +1,67 @@
+{
+  "ref": {
+    "font": {
+      "$description": "Type primitives: three families and weights. Fallbacks are Georgia / Arial for the metric-matched fallback faces.",
+      "family": {
+        "fraunces": {
+          "$type": "fontFamily",
+          "$value": [
+            "Fraunces",
+            "Georgia",
+            "serif"
+          ],
+          "$description": "Fraunces, display and editorial headings."
+        },
+        "schibsted": {
+          "$type": "fontFamily",
+          "$value": [
+            "Schibsted Grotesk",
+            "Arial",
+            "sans-serif"
+          ],
+          "$description": "Schibsted Grotesk, body and UI text."
+        },
+        "jetbrains": {
+          "$type": "fontFamily",
+          "$value": [
+            "JetBrains Mono",
+            "monospace"
+          ],
+          "$description": "JetBrains Mono, labels, prices, code and wordmark."
+        }
+      },
+      "weight": {
+        "regular": {
+          "$type": "fontWeight",
+          "$value": 400,
+          "$description": "Lower bound of the Schibsted range (400-700)."
+        },
+        "medium": {
+          "$type": "fontWeight",
+          "$value": 500,
+          "$description": "Medium (tag, micro)."
+        },
+        "semibold": {
+          "$type": "fontWeight",
+          "$value": 600,
+          "$description": "Semibold (label, body-strong, h4)."
+        },
+        "bold": {
+          "$type": "fontWeight",
+          "$value": 700,
+          "$description": "Upper bound of the Schibsted range; JetBrains Mono wordmark weight."
+        },
+        "extrabold": {
+          "$type": "fontWeight",
+          "$value": 800,
+          "$description": "Extra bold (h2)."
+        },
+        "black": {
+          "$type": "fontWeight",
+          "$value": 900,
+          "$description": "Upper bound of the Fraunces italic display instance (700-900)."
+        }
+      }
+    }
+  }
+}
