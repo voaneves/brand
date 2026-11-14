@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 512" role="img" aria-label="VOANEVES.">
+  <!-- Wordmark is live text for now; the final lockup is outlined in M1. -->
+  <g>
+  <path fill="#f4ead4" fill-rule="evenodd" d="M40 0L472 0L512 40L512 472L472 512L40 512L0 472L0 40ZM56 112L100 112L136 256L172 112L216 112L160 336L112 336ZM56 368L64 368L64 380L384 380L384 368L392 368L392 400L384 400L384 388L64 388L64 400L56 400ZM232 112L283 112L352 296L352 112L392 112L392 336L341 336L272 152L272 336L232 336Z"/>
+  <rect x="416" y="296" width="40" height="40" fill="#f50000"/>
+  </g>
+  <text x="608" y="358" font-family="'JetBrains Mono', ui-monospace, monospace" font-weight="700" font-size="280" letter-spacing="28" fill="#f4ead4">VOANEVES<tspan fill="#f50000">.</tspan></text>
+</svg>
