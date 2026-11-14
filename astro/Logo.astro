@@ -1,0 +1,142 @@
+---
+export interface Props {
+  variant?: 'mark' | 'disc' | 'wordmark' | 'lockup-horizontal' | 'lockup-stacked' | 'signature';
+  tone?: 'default' | 'reverse' | 'mono';
+  class?: string;
+  label?: string;
+}
+
+const {
+  variant = 'mark',
+  tone = 'default',
+  class: className = '',
+  label = 'voaneves',
+} = Astro.props;
+
+const discFill = tone === 'mono' ? 'currentColor' : tone === 'reverse' ? '#ffffff' : '#0a0a0a';
+const dotFill = tone === 'mono' ? 'currentColor' : '#f50000';
+const textFill = tone === 'mono' ? 'currentColor' : tone === 'reverse' ? '#ffffff' : '#0a0a0a';
+const isDiscOnly = variant === 'mark' || variant === 'disc';
+---
+
+{isDiscOnly ? (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+    role="img"
+    aria-label={label}
+    class={className}
+  >
+    <path
+      fill={discFill}
+      fill-rule="evenodd"
+      d="M0 256a256 256 0 1 0 512 0a256 256 0 1 0-512 0ZM142 148L214 148L250 244L286 148L358 148L277 364L223 364Z"
+    />
+    <circle cx="340" cy="337" r="27" fill={dotFill} />
+  </svg>
+) : variant === 'wordmark' ? (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 320 48"
+    role="img"
+    aria-label={label}
+    class={className}
+  >
+    <text
+      x="0"
+      y="34"
+      fill={textFill}
+      font-family="JetBrains Mono, monospace"
+      font-size="32"
+      font-weight="700"
+      letter-spacing="4"
+    >
+      VOANEVES
+    </text>
+  </svg>
+) : variant === 'lockup-stacked' ? (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 240 180"
+    role="img"
+    aria-label={label}
+    class={className}
+  >
+    <g transform="translate(64 0) scale(0.21875)">
+      <path
+        fill={discFill}
+        fill-rule="evenodd"
+        d="M0 256a256 256 0 1 0 512 0a256 256 0 1 0-512 0ZM142 148L214 148L250 244L286 148L358 148L277 364L223 364Z"
+      />
+      <circle cx="340" cy="337" r="27" fill={dotFill} />
+    </g>
+    <text
+      x="120"
+      y="160"
+      text-anchor="middle"
+      fill={textFill}
+      font-family="JetBrains Mono, monospace"
+      font-size="22"
+      font-weight="700"
+      letter-spacing="4"
+    >
+      VOANEVES
+    </text>
+  </svg>
+) : variant === 'signature' ? (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 180 32"
+    role="img"
+    aria-label={label}
+    class={className}
+  >
+    <g transform="translate(0 2) scale(0.0546875)">
+      <path
+        fill={discFill}
+        fill-rule="evenodd"
+        d="M0 256a256 256 0 1 0 512 0a256 256 0 1 0-512 0ZM142 148L214 148L250 244L286 148L358 148L277 364L223 364Z"
+      />
+      <circle cx="340" cy="337" r="27" fill={dotFill} />
+    </g>
+    <text
+      x="38"
+      y="21"
+      fill={textFill}
+      font-family="JetBrains Mono, monospace"
+      font-size="14"
+      font-weight="700"
+      letter-spacing="2"
+    >
+      VOANEVES
+    </text>
+  </svg>
+) : (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 360 64"
+    role="img"
+    aria-label={label}
+    class={className}
+  >
+    <g transform="translate(0 0) scale(0.125)">
+      <path
+        fill={discFill}
+        fill-rule="evenodd"
+        d="M0 256a256 256 0 1 0 512 0a256 256 0 1 0-512 0ZM142 148L214 148L250 244L286 148L358 148L277 364L223 364Z"
+      />
+      <circle cx="340" cy="337" r="27" fill={dotFill} />
+    </g>
+    <text
+      x="82"
+      y="41"
+      fill={textFill}
+      font-family="JetBrains Mono, monospace"
+      font-size="26"
+      font-weight="700"
+      letter-spacing="4"
+    >
+      VOANEVES
+    </text>
+  </svg>
+)}

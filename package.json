@@ -60,7 +60,7 @@
   "scripts": {
     "build": "node -e \"console.log('TODO: build (M1)')\"",
     "build:tokens": "node scripts/build-tokens.mjs",
-    "build:css": "node -e \"console.log('TODO: build:css (M1)')\"",
+    "build:css": "node scripts/build-css.mjs",
     "build:icons": "node scripts/normalize-icons.mjs && node scripts/build-icons.mjs",
     "build:fonts": "node scripts/build-fonts.mjs",
     "build:board": "node -e \"console.log('TODO: build:board (M1)')\"",
