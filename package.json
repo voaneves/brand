@@ -13,15 +13,25 @@
   "bugs": {
     "url": "https://github.com/voaneves/brand/issues"
   },
-  "sideEffects": ["**/*.css"],
-  "files": ["dist", "fonts/*.woff2", "astro", "LICENSES.md"],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist",
+    "fonts/*.woff2",
+    "astro",
+    "LICENSES.md"
+  ],
   "exports": {
     "./css/tokens.css": "./dist/css/tokens.css",
     "./css/fonts.css": "./dist/css/fonts.css",
     "./css/base.css": "./dist/css/base.css",
     "./css/components.css": "./dist/css/components.css",
     "./css/all.css": "./dist/css/all.css",
-    "./tokens": { "types": "./dist/tokens.d.ts", "default": "./dist/tokens.js" },
+    "./tokens": {
+      "types": "./dist/tokens.d.ts",
+      "default": "./dist/tokens.js"
+    },
     "./tokens.json": "./dist/tokens.json",
     "./js/*": "./dist/js/*.js",
     "./fonts/*": "./fonts/*",
@@ -32,17 +42,31 @@
     "./credit": "./dist/credit/credit.html",
     "./package.json": "./package.json"
   },
-  "peerDependencies": { "astro": ">=7" },
-  "peerDependenciesMeta": { "astro": { "optional": true } },
-  "engines": { "node": ">=24" },
-  "publishConfig": { "access": "public", "provenance": true },
+  "peerDependencies": {
+    "astro": ">=7"
+  },
+  "peerDependenciesMeta": {
+    "astro": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "node -e \"console.log('TODO: build (M1)')\"",
-    "build:tokens": "node -e \"console.log('TODO: build:tokens (M1)')\"",
+    "build:tokens": "node scripts/build-tokens.mjs",
     "build:css": "node -e \"console.log('TODO: build:css (M1)')\"",
     "build:icons": "node scripts/normalize-icons.mjs",
     "build:fonts": "node -e \"console.log('TODO: build:fonts (M1)')\"",
     "build:board": "node -e \"console.log('TODO: build:board (M1)')\"",
-    "test": "node -e \"console.log('TODO: test (M1)')\""
+    "test": "node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "style-dictionary": "^5.8.0"
   }
 }

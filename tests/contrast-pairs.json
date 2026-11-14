@@ -1,0 +1,45 @@
+{
+  "pairs": [
+    { "fg": "text", "bg": "surface", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "text", "bg": "surface-soft", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "text", "bg": "surface-raised", "min": 4.5, "themes": ["light", "dark"] },
+
+    { "fg": "text-muted", "bg": "surface", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "text-muted", "bg": "surface-soft", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "text-muted", "bg": "surface-raised", "min": 4.5, "themes": ["light", "dark"] },
+
+    { "fg": "text-on-inverse", "bg": "surface-inverse", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "text-muted-on-inverse", "bg": "surface-inverse", "min": 4.5, "themes": ["light", "dark"] },
+
+    { "fg": "text-on-signal", "bg": "surface-signal", "min": 4.5, "themes": ["light", "dark"] },
+
+    { "fg": "signal", "bg": "surface-inverse", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "signal", "bg": "surface", "min": 4.5, "themes": ["dark"] },
+    { "fg": "signal", "bg": "surface", "min": 3.0, "themes": ["light"], "note": "Large text >=24px and UI components only" },
+    { "fg": "signal", "bg": "surface-soft", "min": 3.0, "themes": ["light"], "note": "Large text >=24px and UI components only" },
+    { "fg": "signal", "bg": "surface-raised", "min": 3.0, "themes": ["light"], "note": "Large text >=24px and UI components only" },
+
+    { "fg": "signal-ink", "bg": "surface", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "signal-ink", "bg": "surface-soft", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "signal-ink", "bg": "surface-raised", "min": 4.5, "themes": ["light", "dark"] },
+
+    { "fg": "focus", "bg": "surface", "min": 3.0, "themes": ["light", "dark"] },
+    { "fg": "focus", "bg": "surface-soft", "min": 3.0, "themes": ["light", "dark"] },
+    { "fg": "focus", "bg": "surface-raised", "min": 3.0, "themes": ["light", "dark"] },
+    { "fg": "focus", "bg": "surface-inverse", "min": 3.0, "themes": ["light", "dark"] },
+    { "fg": "focus-on-signal", "bg": "surface-signal", "min": 3.0, "themes": ["light", "dark"] },
+
+    { "fg": "line-strong", "bg": "surface", "min": 3.0, "themes": ["light", "dark"] },
+    { "fg": "line-strong", "bg": "surface-soft", "min": 3.0, "themes": ["light", "dark"] },
+    { "fg": "line-strong", "bg": "surface-raised", "min": 3.0, "themes": ["light", "dark"] },
+
+    { "fg": "button-signal-fg", "bg": "button-signal-bg", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "button-signal-fg-hover", "bg": "button-signal-bg-hover", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "button-primary-fg", "bg": "button-primary-bg", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "button-primary-fg-hover", "bg": "button-primary-bg-hover", "min": 4.5, "themes": ["light", "dark"] }
+  ],
+  "banned": [
+    { "fg": "ref-white", "bg": "surface-signal", "max": 4.5, "themes": ["light", "dark"], "note": "White must stay below 4.5:1 on Sinal" },
+    { "fg": "cream", "bg": "surface-signal", "max": 4.5, "themes": ["light", "dark"], "note": "Creme must stay below 4.5:1 on Sinal" }
+  ]
+}
