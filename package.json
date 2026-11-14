@@ -62,11 +62,12 @@
     "build:tokens": "node scripts/build-tokens.mjs",
     "build:css": "node -e \"console.log('TODO: build:css (M1)')\"",
     "build:icons": "node scripts/normalize-icons.mjs",
-    "build:fonts": "node -e \"console.log('TODO: build:fonts (M1)')\"",
+    "build:fonts": "node scripts/build-fonts.mjs",
     "build:board": "node -e \"console.log('TODO: build:board (M1)')\"",
     "test": "node --test tests/*.test.js"
   },
   "devDependencies": {
-    "style-dictionary": "^5.8.0"
+    "style-dictionary": "^5.8.0",
+    "subset-font": "^2.9.0"
   }
 }
