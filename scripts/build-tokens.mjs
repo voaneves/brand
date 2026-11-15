@@ -418,7 +418,7 @@ function formatBoard(model, c) {
 const sd = new StyleDictionary({
   source: ['tokens/src/**/*.tokens.json'],
   usesDtcg: true,
-  log: { verbosity: 'default', warnings: 'warn' },
+  log: { verbosity: 'silent', warnings: 'disabled' },
   platforms: {
     vn: {
       buildPath: 'dist/',

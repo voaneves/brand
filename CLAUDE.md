@@ -17,6 +17,9 @@ Perguntas simples e mudanças de uma linha dispensam agentes.
 
 Nunca fazer commit ou push sem autorização explícita do usuário.
 
+**One-liner PowerShell 7.6 (`pwsh`) obrigatório ao final:** Sempre encerrar respostas que criem ou alterem arquivos com um único comando one-liner para PowerShell 7.6 (encadeado com `&&`) que muda para a pasta do projeto (`Set-Location`), adiciona os arquivos (`git add -A`), faz o commit em Conventional Commits sem citar IA/Claude/Gemini e sem `Co-Authored-By` (`git commit -m "..."`), e faz o push (`git push`).
+Exemplo: `Set-Location D:\GitHub\brand && git add -A && git commit -m "fix(icons): descrição" && git push`
+
 ## Fluxo
 
 1. auxiliar levanta o contexto, em paralelo quando possível.

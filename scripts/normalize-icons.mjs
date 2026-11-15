@@ -22,7 +22,7 @@
  *  - Header comment `<!-- source: <set>, license: <license> -->` precedes <path>.
  *  - File names are kebab-case and keep the source base names.
  */
-import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -73,6 +73,11 @@ function bbox(d) {
 }
 
 const num = (n) => String(+n.toFixed(3));
+
+if (!existsSync(SRC)) {
+  console.log(`normalize-icons: source directory ${SRC} not found; using committed icons/svg/*.svg`);
+  process.exit(0);
+}
 
 mkdirSync(OUT, { recursive: true });
 for (const file of readdirSync(SRC).filter((f) => f.endsWith('.svg')).sort()) {
