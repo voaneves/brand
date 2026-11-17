@@ -33,7 +33,7 @@ Descrição para busca (meta description, até 155 caracteres):
 
 | Onde | Papel | Desde |
 | :-- | :-- | :-- |
-| ALETO | Analista Webdesigner: design system, desenvolvimento full stack, GitOps e documentação | atual |
+| ALETO | Analista Webdesigner: design system, desenvolvimento full stack, GitOps e documentação | 2026-03 |
 | voaneves.com | Consultor e Web Developer: sites, apps, dashboards e consultoria | 2019-11 |
 | Projeto Centelha | Avaliador de projetos de Big Data, IA e Engenharia | 2023 |
 
@@ -118,10 +118,14 @@ Descrição para busca (meta description, até 155 caracteres):
 
 ## Prêmios
 
-- 1º lugar no Santander Bootcamp 2025 (Back-End com Python, FastAPI e Docker).
-- 1º lugar no Bootcamp Nexa 2024 (IA Generativa) e no Santander Bootcamp AWS 2024.
-- 1º lugar no Santander Bootcamp 2023 (Ciência de Dados), entre 17.600 participantes.
-- 1º lugar em "Estratégia em Alto Mar" (SEBRAE Tocantins).
+| Colocação | Programa | Encerramento |
+| :-- | :-- | :-- |
+| 🥇 1º lugar | Santander Bootcamp 2025: Back-End com Python (FastAPI, Docker, MongoDB) | 31/08/2025 |
+| 🥈 2º lugar | Santander Bootcamp 2025: Ciência de Dados com Python | 25/01/2026 |
+| 🥇 1º lugar | Santander 2024: Preparatório para Certificação AWS (Cloud Practitioner) | 29/07/2024 |
+| 🥇 1º lugar | Bootcamp Nexa: Fundamentos de IA Generativa e Claude 3 (AWS, Amazon Bedrock) | 09/06/2024 |
+| 🥇 1º lugar | Santander Bootcamp 2023: Ciência de Dados com Python, entre 17.600 participantes | 22/10/2023 |
+| 🥇 1º lugar | Estratégia em Alto Mar (SEBRAE Tocantins) | 2024 |
 
 ## Idiomas
 
@@ -137,8 +141,8 @@ Descrição para busca (meta description, até 155 caracteres):
 
 | Período | Organização | Papel |
 | :-- | :-- | :-- |
-| atual | ALETO | Analista Webdesigner |
-| anterior | SEBRAE Tocantins | Agente Local de Inovação (2022), Analista Técnico (2023) e Gestor do Escritório de Processos (2024) |
+| 2026-03– | ALETO | Analista Webdesigner |
+| 2022–2026-03 | SEBRAE Tocantins | Agente Local de Inovação (2022), Analista Técnico (2023) e Gestor do Escritório de Processos (2024) |
 | 2019– | voaneves.com | Consultor e Web Developer |
 | 2019–2022 | Damásio Educacional | Supervisor de Franquia |
 | 2019 | Coca-Cola FEMSA | Trainee de Planejamento Estratégico |
@@ -158,8 +162,6 @@ Para SEO do site, do perfil e do LinkedIn, nesta ordem de prioridade:
 
 ## Textos prontos para o LinkedIn
 
-Pendente de preencher: mês e ano de início na ALETO, mês e ano de saída do SEBRAE e os detalhes dos bootcamps (marcados com `[ ]`).
-
 ### Título (até 220 caracteres)
 
 > Desenvolvedor Full Stack & Webdesigner | Java · Laravel · Angular · Astro · Jamstack | GitOps · Serverless | IA, BI e Transformação Digital
@@ -174,7 +176,7 @@ As duas primeiras linhas são o que aparece antes de "ver mais" (cerca de 250 ca
 >
 > Hoje sou Analista Webdesigner na ALETO: design system, desenvolvimento full stack, GitOps e documentação como código. Antes, no SEBRAE Tocantins, fui Agente Local de Inovação, Analista Técnico e Gestor do Escritório de Processos, e atendi pequenos negócios com BPMN, painéis de BI e oficinas de IA. Sigo como avaliador de projetos de Big Data, IA e Engenharia no Projeto Centelha.
 >
-> Reconhecimento: 1º lugar em bootcamps Santander e DIO (Ciência de Dados 2023, AWS 2024, IA Generativa 2024, Back-End com Python 2025).
+> Reconhecimento: 1º lugar em quatro bootcamps Santander e DIO (Ciência de Dados 2023, IA Generativa 2024, AWS 2024, Back-End com Python 2025) e 2º lugar em Ciência de Dados 2025.
 >
 > Idiomas: português, inglês (C2), espanhol (C1), coreano e alemão em estudo.
 >
@@ -190,13 +192,13 @@ As duas primeiras linhas são o que aparece antes de "ver mais" (cerca de 250 ca
 >
 > Today I am a Web Design Analyst at ALETO: design system, full stack development, GitOps and docs-as-code. Previously at SEBRAE Tocantins as Local Innovation Agent, Technical Analyst and Process Office Manager. Project evaluator for Big Data, AI and Engineering at Programa Centelha.
 >
-> Awards: 1st place in Santander and DIO bootcamps (Data Science 2023, AWS 2024, Generative AI 2024, Python Back-End 2025).
+> Awards: 1st place in four Santander and DIO bootcamps (Data Science 2023, Generative AI 2024, AWS 2024, Python Back-End 2025) and 2nd place in Data Science 2025.
 >
 > Portfolio: voaneves.com · Code: github.com/voaneves
 
 ### Experiência
 
-**ALETO · Analista Webdesigner | Desenvolvedor Full Stack** · `[mês/ano]` – atual
+**ALETO · Analista Webdesigner | Desenvolvedor Full Stack** · março de 2026 – atual
 
 No campo "Cargo" use o título acima: recrutadores buscam por "Desenvolvedor Full Stack" e "Web Designer", e "Analista Webdesigner" sozinho aparece pouco.
 
@@ -207,7 +209,7 @@ No campo "Cargo" use o título acima: recrutadores buscam por "Desenvolvedor Ful
 >
 > Competências: Laravel, Astro, Vite, Design System, GitOps, Serverless, Docker, CI/CD.
 
-**SEBRAE Tocantins · Gestor do Escritório de Processos** · 2024 – `[mês/ano]`
+**SEBRAE Tocantins · Gestor do Escritório de Processos** · 2024 – março de 2026
 
 > - Mapeamento e refinamento de mais de 50 processos em BPMN 2.0.
 > - OKRs conectados a painéis em Qlik Sense.
@@ -220,23 +222,36 @@ No campo "Cargo" use o título acima: recrutadores buscam por "Desenvolvedor Ful
 > - Mais de 13 oficinas de IA e IA generativa para empresários.
 > - Painéis de BI e automações para os clientes.
 
-### Prêmios e honrarias
+### Prêmios e honrarias (campo "Honrarias e prêmios")
 
-| Título | Emissor | Ano |
+Um item por prêmio. Título, emissor e data de encerramento do ranking:
+
+| Título | Emissor | Data |
 | :-- | :-- | :-- |
-| 1º lugar, Back-End com Python, FastAPI e Docker | Santander Bootcamp (DIO) | 2025 |
-| 1º lugar, IA Generativa | Bootcamp Nexa (DIO) | 2024 |
-| 1º lugar, Santander Bootcamp AWS | DIO | 2024 |
-| 1º lugar, Ciência de Dados, entre 17.600 participantes | Santander Bootcamp (DIO) | 2023 |
-| 1º lugar, Estratégia em Alto Mar | SEBRAE Tocantins | `[ano]` |
+| 1º lugar no Santander Bootcamp 2025: Back-End com Python | DIO e Santander | ago/2025 |
+| 2º lugar no Santander Bootcamp 2025: Ciência de Dados com Python | DIO e Santander | jan/2026 |
+| 1º lugar no Santander 2024: Preparatório para Certificação AWS | DIO e Santander | jul/2024 |
+| 1º lugar no Bootcamp Nexa: Fundamentos de IA Generativa e Claude 3 | DIO e AWS | jun/2024 |
+| 1º lugar no Santander Bootcamp 2023: Ciência de Dados com Python | DIO e Santander | out/2023 |
+| 1º lugar em "Estratégia em Alto Mar" | SEBRAE Tocantins | 2024 |
 
-Detalhes dos bootcamps ainda por confirmar na DIO: `[ ]` nomes exatos e datas de conclusão.
+Descrição sugerida para cada item, adaptando o programa:
+
+> Primeiro lugar no ranking geral do bootcamp. Competências desenvolvidas: Python, FastAPI, Docker, MongoDB, SQL e NoSQL.
 
 ### Certificações a adicionar
 
-- Santander Bootcamp 2025: Back-End com Python, FastAPI e Docker (DIO).
-- Santander Bootcamp 2023: Ciência de Dados (DIO).
-- Santander Bootcamp AWS 2024 (DIO).
+Associe a cada certificação as competências que a DIO listou. Isso aumenta a presença nas buscas por essas competências.
+
+| Certificação | Competências |
+| :-- | :-- |
+| Santander Bootcamp 2025: Back-End com Python (DIO) | Python, FastAPI, Docker, MongoDB, SQL, NoSQL |
+| Santander Bootcamp 2025: Ciência de Dados com Python (DIO) | Python, Git, GitHub, Banco de Dados, Excel, AWS, Machine Learning |
+| Santander 2024: Preparatório Certificação AWS (DIO) | AWS Certified Cloud Practitioner, AWS, GitHub, Git |
+| Bootcamp Nexa: Fundamentos de IA Generativa e Claude 3 (DIO) | IA Generativa, AWS, Amazon Bedrock, Claude 3, Amazon Q, Python |
+| Santander Bootcamp 2023: Ciência de Dados com Python (DIO) | Python, SQL, NoSQL, Power BI, Machine Learning |
+
+Os bootcamps de 2023 e 2024 já constam no LinkedIn com outros nomes (Data Science with Python, Nexa, Preparatório AWS). Mantenha esses e acrescente os de 2025.
 
 ### Idiomas (níveis do LinkedIn)
 
