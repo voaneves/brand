@@ -138,9 +138,7 @@ Descrição para busca (meta description, até 155 caracteres):
 | Período | Organização | Papel |
 | :-- | :-- | :-- |
 | atual | ALETO | Analista Webdesigner |
-| 2024– | SEBRAE Tocantins | Gestor do Escritório de Processos |
-| 2023– | SEBRAE Tocantins | Analista Técnico |
-| 2022–2023 | SEBRAE Tocantins | Agente Local de Inovação (ALI) |
+| anterior | SEBRAE Tocantins | Agente Local de Inovação (2022), Analista Técnico (2023) e Gestor do Escritório de Processos (2024) |
 | 2019– | voaneves.com | Consultor e Web Developer |
 | 2019–2022 | Damásio Educacional | Supervisor de Franquia |
 | 2019 | Coca-Cola FEMSA | Trainee de Planejamento Estratégico |
@@ -160,19 +158,106 @@ Para SEO do site, do perfil e do LinkedIn, nesta ordem de prioridade:
 
 ## Textos prontos para o LinkedIn
 
-**Título (até 220 caracteres):**
+Pendente de preencher: mês e ano de início na ALETO, mês e ano de saída do SEBRAE e os detalhes dos bootcamps (marcados com `[ ]`).
+
+### Título (até 220 caracteres)
 
 > Desenvolvedor Full Stack & Webdesigner | Java · Laravel · Angular · Astro · Jamstack | GitOps · Serverless | IA, BI e Transformação Digital
 
-**Experiência: ALETO, Analista Webdesigner:**
+### Sobre (português)
 
-> Design e desenvolvimento do design ao deploy: design system, aplicações full stack (Laravel, Astro, Vite, serverless), GitOps e documentação como código.
+> Desenvolvedor full stack e webdesigner. Construo do protótipo ao deploy, com várias stacks: Java, PHP e Laravel, Angular, React, Astro, Vite e Jamstack, em arquiteturas serverless e com entrega por GitOps.
+>
+> Sou engenheiro mecânico pela UNICAMP e cursei pós-graduação em Business Intelligence, Big Data e Inteligência Artificial. Essa mistura me deixa à vontade para unir processos (BPMN, Lean Six Sigma), dados (Power BI, Qlik Sense, Python) e código em entregas que se medem.
+>
+> Hoje sou Analista Webdesigner na ALETO: design system, desenvolvimento full stack, GitOps e documentação como código. Antes, no SEBRAE Tocantins, fui Agente Local de Inovação, Analista Técnico e Gestor do Escritório de Processos, e atendi pequenos negócios com BPMN, painéis de BI e oficinas de IA. Sigo como avaliador de projetos de Big Data, IA e Engenharia no Projeto Centelha.
+>
+> Reconhecimento: 1º lugar em bootcamps Santander e DIO (Ciência de Dados 2023, AWS 2024, IA Generativa 2024, Back-End com Python 2025).
+>
+> Idiomas: português, inglês (C2), espanhol (C1), coreano e alemão em estudo.
+>
+> Portfólio: voaneves.com · Código: github.com/voaneves
 
-**Competências para adicionar** (as de maior busca): Laravel, Java, PHP, Angular, Astro, Jamstack, TypeScript, React, GitOps, Serverless, Docker, Design System, Figma, Desenvolvimento Full Stack, Web Design, CI/CD, Cloudflare, AWS.
+### Sobre (inglês, para o perfil em inglês)
 
-**Resumo (sugestão de abertura):**
+> Full stack developer and web designer. I build from prototype to deploy across Java, PHP and Laravel, Angular, React, Astro, Vite and Jamstack, on serverless architectures with GitOps delivery.
+>
+> Mechanical engineer (UNICAMP) with a postgraduate degree in Business Intelligence, Big Data and Artificial Intelligence. I combine process (BPMN, Lean Six Sigma), data (Power BI, Qlik Sense, Python) and code into measurable results.
+>
+> Today I am a Web Design Analyst at ALETO: design system, full stack development, GitOps and docs-as-code. Previously at SEBRAE Tocantins as Local Innovation Agent, Technical Analyst and Process Office Manager. Project evaluator for Big Data, AI and Engineering at Programa Centelha.
+>
+> Awards: 1st place in Santander and DIO bootcamps (Data Science 2023, AWS 2024, Generative AI 2024, Python Back-End 2025).
+>
+> Portfolio: voaneves.com · Code: github.com/voaneves
 
-> Desenvolvedor full stack e webdesigner. Construo do protótipo ao deploy, em Java, PHP e Laravel, Angular, Astro e Jamstack, com arquiteturas serverless e entrega por GitOps. Engenheiro mecânico pela UNICAMP, com pós-graduação em BI, Big Data e Inteligência Artificial, uno processos, dados e código em entregas mensuráveis. Vencedor de bootcamps Santander e DIO.
+### Experiência
+
+**ALETO · Analista Webdesigner** · `[mês/ano]` – atual
+
+> Design e desenvolvimento do design ao deploy.
+> - Design system: tokens, componentes e documentação, com acessibilidade WCAG 2.2 AA.
+> - Desenvolvimento full stack com Laravel, Astro e Vite, e arquiteturas serverless.
+> - GitOps: infraestrutura e deploy versionados em repositório, com CI/CD e documentação como código.
+>
+> Competências: Laravel, Astro, Vite, Design System, GitOps, Serverless, Docker, CI/CD.
+
+**SEBRAE Tocantins · Gestor do Escritório de Processos** · 2024 – `[mês/ano]`
+
+> - Mapeamento e refinamento de mais de 50 processos em BPMN 2.0.
+> - OKRs conectados a painéis em Qlik Sense.
+>
+> Competências: BPMN, OKRs, Qlik Sense, Gestão de Processos.
+
+**SEBRAE Tocantins · Analista Técnico** · 2023 – 2024 e **Agente Local de Inovação** · 2022 – 2023
+
+> - Consultoria em inovação e transformação digital para micro e pequenas empresas: +76% de produtividade no primeiro ciclo.
+> - Mais de 13 oficinas de IA e IA generativa para empresários.
+> - Painéis de BI e automações para os clientes.
+
+### Prêmios e honrarias
+
+| Título | Emissor | Ano |
+| :-- | :-- | :-- |
+| 1º lugar, Back-End com Python, FastAPI e Docker | Santander Bootcamp (DIO) | 2025 |
+| 1º lugar, IA Generativa | Bootcamp Nexa (DIO) | 2024 |
+| 1º lugar, Santander Bootcamp AWS | DIO | 2024 |
+| 1º lugar, Ciência de Dados, entre 17.600 participantes | Santander Bootcamp (DIO) | 2023 |
+| 1º lugar, Estratégia em Alto Mar | SEBRAE Tocantins | `[ano]` |
+
+Detalhes dos bootcamps ainda por confirmar na DIO: `[ ]` nomes exatos e datas de conclusão.
+
+### Certificações a adicionar
+
+- Santander Bootcamp 2025: Back-End com Python, FastAPI e Docker (DIO).
+- Santander Bootcamp 2023: Ciência de Dados (DIO).
+- Santander Bootcamp AWS 2024 (DIO).
+
+### Idiomas (níveis do LinkedIn)
+
+| Idioma | Nível no LinkedIn |
+| :-- | :-- |
+| Português | Nativo ou bilíngue |
+| Inglês | Nativo ou bilíngue (C2) |
+| Espanhol | Proficiência profissional plena (C1) |
+| Coreano | Proficiência profissional limitada (B1) |
+| Alemão | Elementar (A2) |
+
+### Competências para adicionar
+
+Laravel, Java, PHP, Angular, Astro, Jamstack, TypeScript, React, GitOps, Serverless, Docker, Design System, Figma, Desenvolvimento Full Stack, Web Design, CI/CD, Cloudflare, AWS, Power BI, Qlik Sense, BPMN.
+
+### Destaques (seção "Em destaque")
+
+1. voaneves.com
+2. github.com/voaneves/brand (design system)
+3. github.com/voaneves/snake-arena (benchmark de IA)
+4. github.com/voaneves/site
+
+### Outros ajustes
+
+- Atualizar o título da empresa na foto e no cabeçalho para ALETO.
+- Trocar o e-mail de contato para o mesmo que está no GitHub.
+- Pedir uma recomendação a um colega ou gestor da ALETO ou do SEBRAE.
 
 ## Ao editar
 
