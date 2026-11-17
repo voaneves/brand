@@ -166,15 +166,19 @@ Pendente de preencher: mês e ano de início na ALETO, mês e ano de saída do S
 
 ### Sobre (português)
 
-> Desenvolvedor full stack e webdesigner. Construo do protótipo ao deploy, com várias stacks: Java, PHP e Laravel, Angular, React, Astro, Vite e Jamstack, em arquiteturas serverless e com entrega por GitOps.
+As duas primeiras linhas são o que aparece antes de "ver mais" (cerca de 250 caracteres), então concentram as palavras-chave.
+
+> Desenvolvedor Full Stack e Webdesigner | Java, PHP e Laravel, Angular, Astro, Jamstack | GitOps e Serverless | BI e IA. Engenheiro mecânico (UNICAMP) com pós em BI, Big Data e Inteligência Artificial: entrego do design ao deploy.
 >
-> Sou engenheiro mecânico pela UNICAMP e cursei pós-graduação em Business Intelligence, Big Data e Inteligência Artificial. Essa mistura me deixa à vontade para unir processos (BPMN, Lean Six Sigma), dados (Power BI, Qlik Sense, Python) e código em entregas que se medem.
+> Construo do protótipo ao deploy, em várias stacks e em arquiteturas serverless, com entrega por GitOps. Uno processos (BPMN, Lean Six Sigma), dados (Power BI, Qlik Sense, Python) e código em entregas que se medem.
 >
 > Hoje sou Analista Webdesigner na ALETO: design system, desenvolvimento full stack, GitOps e documentação como código. Antes, no SEBRAE Tocantins, fui Agente Local de Inovação, Analista Técnico e Gestor do Escritório de Processos, e atendi pequenos negócios com BPMN, painéis de BI e oficinas de IA. Sigo como avaliador de projetos de Big Data, IA e Engenharia no Projeto Centelha.
 >
 > Reconhecimento: 1º lugar em bootcamps Santander e DIO (Ciência de Dados 2023, AWS 2024, IA Generativa 2024, Back-End com Python 2025).
 >
 > Idiomas: português, inglês (C2), espanhol (C1), coreano e alemão em estudo.
+>
+> Competências: Java · Laravel · PHP · Angular · Astro · Vite · React · TypeScript · Jamstack · Serverless · GitOps · Docker · AWS · Cloudflare · Design System · Figma · Power BI · Qlik Sense · BPMN · Python · IA Generativa.
 >
 > Portfólio: voaneves.com · Código: github.com/voaneves
 
@@ -192,7 +196,9 @@ Pendente de preencher: mês e ano de início na ALETO, mês e ano de saída do S
 
 ### Experiência
 
-**ALETO · Analista Webdesigner** · `[mês/ano]` – atual
+**ALETO · Analista Webdesigner | Desenvolvedor Full Stack** · `[mês/ano]` – atual
+
+No campo "Cargo" use o título acima: recrutadores buscam por "Desenvolvedor Full Stack" e "Web Designer", e "Analista Webdesigner" sozinho aparece pouco.
 
 > Design e desenvolvimento do design ao deploy.
 > - Design system: tokens, componentes e documentação, com acessibilidade WCAG 2.2 AA.
@@ -244,7 +250,13 @@ Detalhes dos bootcamps ainda por confirmar na DIO: `[ ]` nomes exatos e datas de
 
 ### Competências para adicionar
 
-Laravel, Java, PHP, Angular, Astro, Jamstack, TypeScript, React, GitOps, Serverless, Docker, Design System, Figma, Desenvolvimento Full Stack, Web Design, CI/CD, Cloudflare, AWS, Power BI, Qlik Sense, BPMN.
+O LinkedIn aceita até 50. As três primeiras ficam fixadas e são as que mais pesam na busca de recrutadores. Fixe:
+
+1. Desenvolvimento Full Stack
+2. Laravel
+3. Web Design
+
+Depois adicione: Java, PHP, Angular, Astro, Jamstack, TypeScript, React, GitOps, Serverless, Docker, Design System, Figma, CI/CD, Cloudflare, AWS, Power BI, Qlik Sense, BPMN, Python, IA Generativa, Ciência de Dados, Gestão de Projetos. Peça validação (endossos) dos colegas nas três primeiras.
 
 ### Destaques (seção "Em destaque")
 
@@ -255,9 +267,31 @@ Laravel, Java, PHP, Angular, Astro, Jamstack, TypeScript, React, GitOps, Serverl
 
 ### Outros ajustes
 
-- Atualizar o título da empresa na foto e no cabeçalho para ALETO.
+- Atualizar a empresa na foto e no cabeçalho para ALETO.
 - Trocar o e-mail de contato para o mesmo que está no GitHub.
 - Pedir uma recomendação a um colega ou gestor da ALETO ou do SEBRAE.
+- **Localização:** recrutadores filtram por cidade. Se quiser aparecer em mais buscas, use uma cidade maior da região ou "Brasil" com o aviso de trabalho remoto no título.
+- Manter o perfil também em inglês (o LinkedIn permite um segundo idioma), com o texto "Sobre (inglês)".
+
+## Como ganhar visitas no LinkedIn
+
+Texto bem escrito ajuda a ser encontrado, mas as visitas vêm sobretudo de atividade e rede. Pelo que se sabe do funcionamento da busca, pesam nesta ordem: palavras-chave no título e no cargo atual, competências, texto do Sobre e das experiências, rede e atividade. Ninguém garante posição.
+
+**Repetir as mesmas palavras** no título, no cargo, no Sobre, nas experiências e nas competências. Hoje elas são: desenvolvedor full stack, Laravel, Java, Angular, Astro, Jamstack, GitOps, serverless, design system.
+
+**Atividade semanal**, sem exigir muito tempo:
+
+| Frequência | O quê | Ideias que já existem nos seus repositórios |
+| :-- | :-- | :-- |
+| 1 a 2 posts por semana | Um aprendizado curto, com imagem ou gráfico | resultados do `snake-arena`; como o design system da `brand` nasceu; Lighthouse 100 no `site`; o que mudou ao adotar GitOps |
+| 3 a 5 comentários por semana | Comentar posts de pessoas da área, com opinião própria | Laravel, Astro, design system, GitOps, IA |
+| 1 vez por mês | Artigo ou post maior com um estudo de caso | CAATO (Lighthouse 43 → 92), Mota & Godinho, MTE (+236% de alcance) |
+
+**Seção "Em destaque":** os 4 itens acima. Use imagens e capas, porque posts com imagem recebem mais cliques.
+
+**Rede:** conectar com colegas de bootcamp (DIO e Santander), SEBRAE, UNICAMP, ALETO e quem comentar nos seus posts. Passar de 500 conexões muda o selo e a confiança de quem visita.
+
+**Link do LinkedIn** em todo lugar: GitHub (já), assinatura de e-mail, site e currículo.
 
 ## Ao editar
 
