@@ -2,15 +2,26 @@
 
 Fonte única para o texto de posicionamento e para a lista de competências de Victor Neves. O site (voaneves.com), o README do perfil no GitHub e o LinkedIn partem deste arquivo. Quando algo mudar, altere aqui primeiro.
 
-Última revisão: 2026-11-17. Fontes: voaneves.com e relato do próprio Victor.
+Última revisão: 2026-11-17. Fontes: voaneves.com, exportação do LinkedIn (2026-11-17) e relato do próprio Victor.
+
+## Nome e variações
+
+Para busca, use sempre o nome completo ao menos uma vez por página.
+
+| Uso | Forma |
+| :-- | :-- |
+| Nome público | Victor Neves |
+| Nome completo | Victor Otávio Andrade das Neves |
+| Usuário | voaneves |
+| Marca | VOANEVES. |
 
 ## Posicionamento
 
-**Sinal, não ruído.** Engenheiro mecânico que une processos (BPMN), dados (BI), IA e desenvolvimento web em entregas mensuráveis. Atua do design ao deploy, em várias stacks (Java, PHP e Laravel, Angular, Jamstack): interface, sistema, infraestrutura e a documentação que os mantém de pé.
+**Sinal, não ruído.** Desenvolvedor full stack e webdesigner, engenheiro mecânico de formação, que une processos (BPMN), dados (BI), IA e desenvolvimento web em entregas mensuráveis. Atua do design ao deploy, em várias stacks (Java, PHP e Laravel, Angular, Jamstack): interface, sistema, infraestrutura e a documentação que os mantém de pé.
 
 Atendimento no Brasil e no exterior, remoto ou híbrido.
 
-Descrição curta (bio, até 160 caracteres):
+Descrição curta (bio do GitHub, até 160 caracteres):
 
 > Analista Webdesigner @ ALETO · Full Stack: Java, Laravel, Angular, Astro, Jamstack · GitOps, Serverless · BI e IA · Brasil
 
@@ -23,9 +34,8 @@ Descrição para busca (meta description, até 155 caracteres):
 | Onde | Papel | Desde |
 | :-- | :-- | :-- |
 | ALETO | Analista Webdesigner: design system, desenvolvimento full stack, GitOps e documentação | atual |
-| SEBRAE Tocantins | Gestor do Escritório de Processos: BPMN, OKRs e painéis em Qlik Sense | 2024-10 |
 | voaneves.com | Consultor e Web Developer: sites, apps, dashboards e consultoria | 2019-11 |
-| Projeto Centelha | Avaliador de projetos de IA e Big Data | 2023 |
+| Projeto Centelha | Avaliador de projetos de Big Data, IA e Engenharia | 2023 |
 
 ## Competências por área
 
@@ -54,20 +64,22 @@ Descrição para busca (meta description, até 155 caracteres):
 - CI/CD: GitHub Actions e Forgejo Actions.
 - Docker e Compose, Kubernetes por manifestos, hospedagem em Cloudflare, AWS e GCP.
 - Documentação como código: fonte versionada no repositório, wiki publicada por CI.
-- Repositório de segredos separado do código, sem valores no Git.
+- Segredos fora do código, sem valores no Git.
 
 ### Dados, BI e IA
 
-- Python, Pandas, NumPy, Jupyter, ETL e modelagem de dados.
-- Power BI e Qlik Sense: mais de 40 painéis entregues.
-- IA generativa e LLMs: engenharia de prompt, integrações e automações, oficinas para empresas.
-- Reinforcement Learning (DQN) e NLP, com benchmarks reprodutíveis.
+- Ciência de dados: Python, Pandas, NumPy, Jupyter, Julia, ETL e modelagem.
+- BI: Power BI, Qlik Sense e Tableau; SQL, NoSQL, Hadoop e MongoDB. Mais de 40 painéis entregues.
+- IA generativa e LLMs (Claude, Amazon Bedrock): engenharia de prompt, integrações e automações, oficinas para empresas.
+- Aprendizado de máquina, Reinforcement Learning (DQN), redes neurais convolucionais e NLP, com benchmarks reprodutíveis.
 
-### Processos e estratégia
+### Processos, gestão e estratégia
 
 - BPMN 2.0, mapeamento AS-IS e TO-BE, automação low-code.
-- Lean Six Sigma Green Belt, DMAIC, OKRs, Scrum e Kanban.
+- Lean Six Sigma Green Belt, DMAIC, Scrum, Kanban, gestão de riscos e controle de qualidade.
+- Planejamento estratégico: OKRs, Balanced Scorecard, Matriz BCG, McKinsey 7S, SWOT.
 - Metodologia SEBRAE de produtividade para micro e pequenas empresas.
+- Transformação digital e inovação, desenvolvimento sustentável.
 
 ## Resultados divulgados
 
@@ -82,12 +94,34 @@ Descrição para busca (meta description, até 155 caracteres):
 | Lighthouse do CAATO | 43 → 92 |
 | Lighthouse da Mota & Godinho | 62 → 91 |
 
-## Formação, certificações e prêmios
+## Formação
 
-- **Engenharia Mecânica**, UNICAMP (2012–2018).
-- **Pós-graduações** na Faculdade Focus: Análise de Sistemas (2023–2024) e IA, BI e Big Data (2023). Em andamento: Sistemas de Informação.
-- **Certificações:** Lean Six Sigma Green Belt (2019); Google Project Management e Google Data Analytics (2023–2024); Skills for the Green Transition, University of Cambridge (2023); Data Visualization and Decision Making, PwC (2023).
-- **1º lugar:** Santander Bootcamp 2025 (Back-End com Python, FastAPI e Docker); Santander Bootcamp 2023 (Ciência de Dados); Bootcamp Nexa 2024 (IA Generativa); Santander Bootcamp AWS 2024; "Estratégia em Alto Mar" (SEBRAE Tocantins).
+| Curso | Instituição | Período |
+| :-- | :-- | :-- |
+| Bacharelado em Sistemas de Informação | XP Educação | 2023–2027 |
+| Pós-graduação em BI, Big Data e Inteligência Artificial | Faculdade Focus | 2023–2024 |
+| Engenharia Mecânica | UNICAMP | 2012–2018 |
+
+## Certificações
+
+| Área | Certificação |
+| :-- | :-- |
+| Gestão e qualidade | Lean Six Sigma Green Belt (2019); Yellow Belt, Setec Consulting (2017); Liderança Essencial, SerTotal (2015) |
+| Google | Project Management (2024); Data Analytics (2023); Foundations, Initiation e Planning of Project Management |
+| Dados e BI | PwC: Data-driven Decision Making, Problem Solving with Excel, Data Visualization with Advanced Excel (2023) |
+| IA | Bootcamp Nexa: IA Generativa e Claude 3 (DIO, 2024); Data Science with Python (DIO); Convolutional Neural Networks (Great Learning); Digital Skills: Artificial Intelligence (Accenture); Introdução à IA (Huawei ICT Academy) |
+| Cloud | Preparatório AWS (DIO, 2024) |
+| Web | Angular 7 Advanced (Great Learning); Inbound Marketing (HubSpot, expirada em 2025); Digital Skills: Digital Marketing (Accenture) |
+| Sustentabilidade | Skills for the Green Transition, University of Cambridge (2023) |
+| SEBRAE | Trilhas ALI Transformação Digital e Produtividade (2022); Transformar Juntos (2023); LGPD; ChatGPT, IA e vendas |
+| Idioma | EF SET Inglês 84/100 e 76/100, nível C2 |
+
+## Prêmios
+
+- 1º lugar no Santander Bootcamp 2025 (Back-End com Python, FastAPI e Docker).
+- 1º lugar no Bootcamp Nexa 2024 (IA Generativa) e no Santander Bootcamp AWS 2024.
+- 1º lugar no Santander Bootcamp 2023 (Ciência de Dados), entre 17.600 participantes.
+- 1º lugar em "Estratégia em Alto Mar" (SEBRAE Tocantins).
 
 ## Idiomas
 
@@ -103,23 +137,42 @@ Descrição para busca (meta description, até 155 caracteres):
 
 | Período | Organização | Papel |
 | :-- | :-- | :-- |
+| atual | ALETO | Analista Webdesigner |
 | 2024– | SEBRAE Tocantins | Gestor do Escritório de Processos |
-| 2022–2024 | SEBRAE Tocantins | Analista Técnico e Agente Local de Inovação |
+| 2023– | SEBRAE Tocantins | Analista Técnico |
+| 2022–2023 | SEBRAE Tocantins | Agente Local de Inovação (ALI) |
 | 2019– | voaneves.com | Consultor e Web Developer |
 | 2019–2022 | Damásio Educacional | Supervisor de Franquia |
 | 2019 | Coca-Cola FEMSA | Trainee de Planejamento Estratégico |
 | 2018 | Krones AG (Alemanha) | Summer Intern em Engenharia Industrial |
 | 2017–2019 | Coca-Cola FEMSA | Estagiário de Manutenção e DMAIC |
-| 2012–2018 | UNICAMP | Iniciação científica (CNPq), MTE e Labmet |
+| 2014–2018 | MTE (UNICAMP) | Membro e Diretor de Marketing |
+| 2012–2014 | UNICAMP | Iniciação científica em Materiais (PIBIC) |
 
 ## Palavras-chave
 
 Para SEO do site, do perfil e do LinkedIn, nesta ordem de prioridade:
 
-- **Cargo:** webdesigner, desenvolvedor full stack, engenheiro de software web, consultor de transformação digital.
-- **Tecnologia:** Java, Laravel, PHP, Angular, React, Astro, Vite, Jamstack, TypeScript, serverless, GitOps, design system, Cloudflare, Docker.
-- **Domínio:** BPMN, BI, Power BI, Qlik Sense, IA generativa, Reinforcement Learning, automação de processos, Lean Six Sigma.
+- **Cargo:** desenvolvedor full stack, webdesigner, desenvolvedor web, engenheiro de software web, consultor de transformação digital.
+- **Tecnologia:** Java, Laravel, PHP, Angular, React, Astro, Vite, Jamstack, TypeScript, serverless, GitOps, design system, Cloudflare, Docker, AWS.
+- **Domínio:** BPMN, BI, Power BI, Qlik Sense, ciência de dados, IA generativa, LLM, Claude, Reinforcement Learning, automação de processos, Lean Six Sigma, gestão de projetos.
 - **Lugar:** Brasil, remoto.
+
+## Textos prontos para o LinkedIn
+
+**Título (até 220 caracteres):**
+
+> Desenvolvedor Full Stack & Webdesigner | Java · Laravel · Angular · Astro · Jamstack | GitOps · Serverless | IA, BI e Transformação Digital
+
+**Experiência: ALETO, Analista Webdesigner:**
+
+> Design e desenvolvimento do design ao deploy: design system, aplicações full stack (Laravel, Astro, Vite, serverless), GitOps e documentação como código.
+
+**Competências para adicionar** (as de maior busca): Laravel, Java, PHP, Angular, Astro, Jamstack, TypeScript, React, GitOps, Serverless, Docker, Design System, Figma, Desenvolvimento Full Stack, Web Design, CI/CD, Cloudflare, AWS.
+
+**Resumo (sugestão de abertura):**
+
+> Desenvolvedor full stack e webdesigner. Construo do protótipo ao deploy, em Java, PHP e Laravel, Angular, Astro e Jamstack, com arquiteturas serverless e entrega por GitOps. Engenheiro mecânico pela UNICAMP, com pós-graduação em BI, Big Data e Inteligência Artificial, uno processos, dados e código em entregas mensuráveis. Vencedor de bootcamps Santander e DIO.
 
 ## Ao editar
 
