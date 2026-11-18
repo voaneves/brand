@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://github.com/voaneves/brand/actions/workflows/ci.yml"><img src="https://github.com/voaneves/brand/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="LICENSES.md"><img src="https://img.shields.io/badge/License-MIT_(code)-0a0a0a.svg" alt="License: MIT (code)"></a>
-  <a href="package.json"><img src="https://img.shields.io/badge/version-1.0.0-f50000.svg" alt="Version 1.0.0"></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/version-1.0.0-b80000.svg" alt="Version 1.0.0"></a>
   <a href="tests/contrast-pairs.json"><img src="https://img.shields.io/badge/WCAG_2.2-AA_verified-0a0a0a.svg" alt="WCAG 2.2 AA verified"></a>
   <a href="https://voaneves.com"><img src="https://img.shields.io/badge/site-voaneves.com-0a0a0a.svg" alt="voaneves.com"></a>
 </p>
@@ -169,7 +169,7 @@ Automated checks executed by `npm test` (`node --test tests/*.test.js && npm run
 | `fonts/` | Subsetted `.woff2` font files and `OFL-*.txt` license notices |
 | `icons/` | 19 normalized source SVGs (`svg/`) and per-icon attribution (`icons/LICENSES.md`) |
 | `logo/` | Canonical Concept B (Sinal) SVG marks, wordmarks, and lockups |
-| `app-icons/` | Source SVG favicon and PWA/touch icon generator assets |
+| `app-icons/` | Source SVG favicon and pre-generated `.ico` / `.png` PWA and touch icons |
 | `motifs/` | Auxiliary decorative SVG wave dividers |
 | `board/` | Source chapters (`01`–`14`) and component HTML previews for the visual board |
 | `docs/` | ADRs (`docs/decisions/`), logo guide (`docs/03-logo.md`), token spec (`docs/spec-values.md`), a11y checklist (`docs/a11y-checklist.md`), component docs, and positioning source (`docs/perfil-tecnico.md`) |
