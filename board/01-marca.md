@@ -47,12 +47,12 @@ O símbolo é composto pelo primeiro glifo do nome (`V`) na inclinação caracte
 
 | Arquivo | Descrição | Paleta / Elementos |
 |---|---|---|
-| `logo/mark.svg` | Símbolo padrão | Disco Tinta (`#0a0a0a`), V Creme (`#f4ead4`), ponto Sinal (`#f50000`) |
-| `logo/mark-reverse.svg` | Símbolo reverso | Disco Creme (`#f4ead4`), V Tinta (`#0a0a0a`), ponto Sinal (`#f50000`) |
-| `logo/mark-mono.svg` | Símbolo monocromático | Disco Tinta (`#0a0a0a`), V vazado, ponto vazado via `fill-rule="evenodd"` |
+| `logo/mark.svg` | Símbolo padrão | Disco Tinta (`#0a0a0a`) com V vazado (mostra a superfície), ponto Sinal (`#f50000`) |
+| `logo/mark-reverse.svg` | Símbolo reverso | Disco Creme (`#f4ead4`) com V vazado, ponto Sinal (`#f50000`) |
+| `logo/mark-mono.svg` | Símbolo monocromático | Tinta única (`#0a0a0a`): disco com V e ponto vazados via `fill-rule="evenodd"` |
 | `logo/wordmark.svg` | Wordmark oficial | "VOANEVES." em JetBrains Mono Bold (700), ponto em Sinal (`#f50000`) |
 | `logo/wordmark-reverse.svg` | Wordmark reverso | Texto em Creme (`#f4ead4`), ponto em Sinal (`#f50000`) |
-| `logo/wordmark-mono.svg` | Wordmark monocromático | Texto e ponto em cor única uniforme (`#0a0a0a` ou `#f4ead4`) |
+| `logo/wordmark-mono.svg` | Wordmark monocromático | Texto e ponto em Tinta única (`#0a0a0a`) |
 | `logo/lockup-horizontal.svg` | Lockup horizontal | Símbolo + wordmark alinhados na horizontal |
 | `logo/lockup-stacked.svg` | Lockup empilhado | Símbolo sobreposto centralizado ao wordmark |
 | `logo/signature.svg` | Assinatura compacta | Variante otimizada para cabeçalhos e assinaturas |

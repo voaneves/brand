@@ -6,7 +6,7 @@
 
 - **Tom editorial:** Direto, técnico quando necessário, sem adjetivação vazia.
 - **Idioma padrão:** Português brasileiro (`pt-BR`) como voz principal, com espelho técnico em inglês (`en`).
-- **Assinatura visual:** Contraste alto entre papel quente (`#fff8f8`) e tinta profunda (`#0a0a0a`), pontuado exclusivamente pelo sinal vermelho (`#f50000`).
+- **Assinatura visual:** Contraste alto entre papel quente Creme (`#f4ead4`) e tinta profunda (`#0a0a0a`), pontuado exclusivamente pelo sinal vermelho (`#f50000`).
 
 ## Princípios de Design
 

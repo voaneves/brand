@@ -67,7 +67,7 @@ def draw_mark(path, disc="0A0A0A", dot="F50000", size=1024):
 MARK = os.path.join(ASSETS, "mark.png")
 MARK_REV = os.path.join(ASSETS, "mark-reverse.png")
 draw_mark(MARK)
-draw_mark(MARK_REV, disc="FFFFFF", dot="F50000")
+draw_mark(MARK_REV, disc="F4EAD4", dot="F50000")
 
 
 # ------------------------------------------------------------------- DOCX

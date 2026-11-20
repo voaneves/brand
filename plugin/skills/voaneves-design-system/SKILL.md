@@ -90,7 +90,7 @@ One series in Sinal (`--vn-viz-1`), others neutral (`--vn-viz-2`, `--vn-viz-3`);
 
 ## Logo
 
-Mark: ink disc with an incised italic V and a Sinal dot. Files in `@voaneves/brand/logo/*`: `mark`, `wordmark`, `lockup-horizontal`, `lockup-stacked`, `signature`, each in standard, `-reverse` (white disc on dark) and `-mono` (`currentColor`).
+Mark: ink disc with an incised italic V and a Sinal dot. Files in `@voaneves/brand/logo/*`: `mark`, `wordmark`, `lockup-horizontal`, `lockup-stacked`, `signature`, each in standard, `-reverse` (Creme `#f4ead4` disc on dark) and `-mono` (`currentColor`).
 
 - Clear space: 0.25 of the disc diameter on every side.
 - Minimum size: 16px app icon, 24px editorial mark and horizontal lockup; print 8mm disc, 18mm lockup width.

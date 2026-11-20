@@ -14,6 +14,7 @@ O sistema de movimento privilegia resposta tátil imediata em micro-interações
 | `--vn-dur-cursor` | `450ms` | Gaveta e rastreamento |
 | `--vn-dur-line` | `800ms` | Traços e divisórias |
 | `--vn-dur-unveil` | `1200ms` | Revelação editorial |
+| `--vn-dur-page` | `250ms` | Transição entre documentos |
 
 ## Movimento Reduzido
 

@@ -11,6 +11,8 @@
 | `@voaneves/brand/css/fonts.css` | Faces `.woff2` e fallbacks métricos |
 | `@voaneves/brand/css/base.css` | Reset, base, tipografia e utilitários |
 | `@voaneves/brand/css/components.css` | Componentes `.vn-*` isolados |
+| `@voaneves/brand/tailwind/theme.css` | Tema Tailwind v4 (`@theme inline`) gerado dos tokens |
+| `@voaneves/brand/tokens.json` | Valores resolvidos nos dois temas |
 | `@voaneves/brand/tokens` | Objeto JS tipado + `.d.ts` |
 | `@voaneves/brand/js/*` | Módulos ES (`cursor`, `magnetic`, `reveal`, `theme`, `marquee`, `journey`) |
 | `@voaneves/brand/astro/*` | Componentes fonte `Logo.astro`, `Icon.astro`, `Credit.astro` |
