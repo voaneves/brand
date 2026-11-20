@@ -1,0 +1,203 @@
+{
+  "$schema": "https://raw.githubusercontent.com/voaneves/dtcg-contrast/main/dtcg-contrast.schema.json",
+  "tokens": [
+    "../../tokens/src"
+  ],
+  "themes": [
+    {
+      "name": "light"
+    },
+    {
+      "name": "dark",
+      "extensionPath": "vn.dark"
+    }
+  ],
+  "pairs": [
+    {
+      "fg": "color.text",
+      "bg": "color.surface",
+      "level": "AA",
+      "name": "text on surface"
+    },
+    {
+      "fg": "color.text",
+      "bg": "color.surface-soft",
+      "level": "AA",
+      "name": "text on surface-soft"
+    },
+    {
+      "fg": "color.text",
+      "bg": "color.surface-raised",
+      "level": "AA",
+      "name": "text on surface-raised"
+    },
+    {
+      "fg": "color.text-muted",
+      "bg": "color.surface",
+      "level": "AA",
+      "name": "text-muted on surface"
+    },
+    {
+      "fg": "color.text-muted",
+      "bg": "color.surface-soft",
+      "level": "AA",
+      "name": "text-muted on surface-soft"
+    },
+    {
+      "fg": "color.text-muted",
+      "bg": "color.surface-raised",
+      "level": "AA",
+      "name": "text-muted on surface-raised"
+    },
+    {
+      "fg": "color.text-on-inverse",
+      "bg": "color.surface-inverse",
+      "level": "AA",
+      "name": "text-on-inverse on surface-inverse"
+    },
+    {
+      "fg": "color.text-muted-on-inverse",
+      "bg": "color.surface-inverse",
+      "level": "AA",
+      "name": "text-muted-on-inverse on surface-inverse"
+    },
+    {
+      "fg": "color.text-on-signal",
+      "bg": "color.surface-signal",
+      "level": "AA",
+      "name": "text-on-signal on surface-signal"
+    },
+    {
+      "fg": "color.signal",
+      "bg": "color.surface-inverse",
+      "level": "AA",
+      "name": "signal on surface-inverse"
+    },
+    {
+      "fg": "color.signal",
+      "bg": "color.surface",
+      "level": "AA",
+      "name": "signal on surface",
+      "themes": [
+        "dark"
+      ]
+    },
+    {
+      "fg": "color.signal",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "signal on surface",
+      "themes": [
+        "light"
+      ]
+    },
+    {
+      "fg": "color.signal",
+      "bg": "color.surface-soft",
+      "level": "UI",
+      "name": "signal on surface-soft",
+      "themes": [
+        "light"
+      ]
+    },
+    {
+      "fg": "color.signal",
+      "bg": "color.surface-raised",
+      "level": "UI",
+      "name": "signal on surface-raised",
+      "themes": [
+        "light"
+      ]
+    },
+    {
+      "fg": "color.signal-ink",
+      "bg": "color.surface",
+      "level": "AA",
+      "name": "signal-ink on surface"
+    },
+    {
+      "fg": "color.signal-ink",
+      "bg": "color.surface-soft",
+      "level": "AA",
+      "name": "signal-ink on surface-soft"
+    },
+    {
+      "fg": "color.signal-ink",
+      "bg": "color.surface-raised",
+      "level": "AA",
+      "name": "signal-ink on surface-raised"
+    },
+    {
+      "fg": "color.focus",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "focus on surface"
+    },
+    {
+      "fg": "color.focus",
+      "bg": "color.surface-soft",
+      "level": "UI",
+      "name": "focus on surface-soft"
+    },
+    {
+      "fg": "color.focus",
+      "bg": "color.surface-raised",
+      "level": "UI",
+      "name": "focus on surface-raised"
+    },
+    {
+      "fg": "color.focus",
+      "bg": "color.surface-inverse",
+      "level": "UI",
+      "name": "focus on surface-inverse"
+    },
+    {
+      "fg": "color.focus-on-signal",
+      "bg": "color.surface-signal",
+      "level": "UI",
+      "name": "focus-on-signal on surface-signal"
+    },
+    {
+      "fg": "color.line-strong",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "line-strong on surface"
+    },
+    {
+      "fg": "color.line-strong",
+      "bg": "color.surface-soft",
+      "level": "UI",
+      "name": "line-strong on surface-soft"
+    },
+    {
+      "fg": "color.line-strong",
+      "bg": "color.surface-raised",
+      "level": "UI",
+      "name": "line-strong on surface-raised"
+    },
+    {
+      "fg": "button.signal.fg",
+      "bg": "button.signal.bg",
+      "level": "AA",
+      "name": "button-signal-fg on button-signal-bg"
+    },
+    {
+      "fg": "button.signal.fg.hover",
+      "bg": "button.signal.bg.hover",
+      "level": "AA",
+      "name": "button-signal-fg-hover on button-signal-bg-hover"
+    },
+    {
+      "fg": "button.primary.fg",
+      "bg": "button.primary.bg",
+      "level": "AA",
+      "name": "button-primary-fg on button-primary-bg"
+    },
+    {
+      "fg": "button.primary.fg.hover",
+      "bg": "button.primary.bg.hover",
+      "level": "AA",
+      "name": "button-primary-fg-hover on button-primary-bg-hover"
+    }
+  ]
+}
