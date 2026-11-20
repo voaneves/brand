@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "voaneves",
+  "description": "VOANEVES brand and design system plugins.",
+  "owner": {
+    "name": "Victor Neves"
+  },
+  "plugins": [
+    {
+      "name": "voaneves-design-system",
+      "source": "./plugin",
+      "description": "Build UI, pages, docs, slides and READMEs in the VOANEVES brand: tokens, type, logo rules, contrast and templates."
+    }
+  ]
+}

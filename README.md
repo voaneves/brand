@@ -40,6 +40,15 @@ Wordmark: **VOANEVES.** with the full stop in Sinal.
 
 Planned: `npm i @voaneves/brand`, then import `@voaneves/brand/css/all.css`.
 
+## Use with Claude Code
+
+This repo is also a Claude Code plugin marketplace. The `voaneves-design-system` plugin gives Claude the tokens, type scale, logo rules and accessibility checks for building in this brand.
+
+```
+/plugin marketplace add voaneves/brand
+/plugin install voaneves-design-system@voaneves
+```
+
 ## Links
 
 - [PLAN.md](PLAN.md)
