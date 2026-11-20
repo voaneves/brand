@@ -17,6 +17,9 @@ const COLORS = [
   'surface', 'surface-soft', 'surface-raised', 'surface-inverse', 'surface-signal',
   'text', 'text-muted', 'text-on-inverse', 'text-muted-on-inverse', 'text-on-signal',
   'line', 'line-strong', 'line-on-dark', 'focus', 'focus-on-signal',
+  'viz-1', 'viz-2', 'viz-3', 'viz-grid',
+  'viz-seq-1', 'viz-seq-2', 'viz-seq-3', 'viz-seq-4', 'viz-seq-5',
+  'viz-div-neg-2', 'viz-div-neg-1', 'viz-div-mid', 'viz-div-pos-1', 'viz-div-pos-2',
 ];
 const SHADOWS = ['pop', 'lift', 'media', 'drawer', 'signal', 'dot'];
 const RADII = ['xs', 'sm', 'md', 'lg', 'xl', '2xl', 'pill', 'round'];

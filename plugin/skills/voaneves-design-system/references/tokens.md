@@ -33,7 +33,16 @@ ink-900 `#1a1a1a`, ink-925 `#141414`, ink-950 `#0a0a0a`, ink-1000 `#000000`, whi
 | `--vn-focus` | signal | signal | 2px ring, offset 4px |
 | `--vn-focus-on-signal` | `#0a0a0a` | same | Ring on Sinal |
 
-Charts: `--vn-viz-1` signal, `--vn-viz-2` text, `--vn-viz-3` line-strong, `--vn-viz-grid` line.
+Charts (details: https://github.com/voaneves/brand/blob/main/docs/data-viz.md): max 3 categorical series, one highlighted in Sinal, direct labels, never color alone.
+
+| Token | Light | Dark |
+|---|---|---|
+| `--vn-viz-1` / `-2` / `-3` | `#f50000` / `#0a0a0a` / `#7a705c` | `#ff3838` / `#e8dec5` / `#8a8170` |
+| `--vn-viz-grid` | ink 12% | cream 12% |
+| `--vn-viz-seq-1` to `-5` (sequential, higher = stronger) | `#d8cfbc` `#a9a293` `#7a766b` `#42403a` `#0a0a0a` | reversed |
+| `--vn-viz-div-neg-2` / `-neg-1` / `-mid` / `-pos-1` / `-pos-2` | `#f50000` `#f4756a` `#efe4c5` `#7f7a6f` `#0a0a0a` | `#ff3838` `#9d2626` `#141414` `#797468` `#e8dec5` |
+
+seq-1, seq-2 and div-neg-1 are fills (below 3:1): pair them with borders or labels.
 
 ## Shadow
 

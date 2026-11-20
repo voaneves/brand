@@ -198,6 +198,54 @@
       "bg": "button.primary.bg.hover",
       "level": "AA",
       "name": "button-primary-fg-hover on button-primary-bg-hover"
+    },
+    {
+      "fg": "color.viz-1",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "viz-1 on surface (chart marks)"
+    },
+    {
+      "fg": "color.viz-2",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "viz-2 on surface (chart marks)"
+    },
+    {
+      "fg": "color.viz-3",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "viz-3 on surface (chart marks)"
+    },
+    {
+      "fg": "color.viz-seq-3",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "viz-seq-3 on surface (chart marks)"
+    },
+    {
+      "fg": "color.viz-seq-4",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "viz-seq-4 on surface (chart marks)"
+    },
+    {
+      "fg": "color.viz-seq-5",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "viz-seq-5 on surface (chart marks)"
+    },
+    {
+      "fg": "color.viz-div-neg-2",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "viz-div-neg-2 on surface (chart marks)"
+    },
+    {
+      "fg": "color.viz-div-pos-2",
+      "bg": "color.surface",
+      "level": "UI",
+      "name": "viz-div-pos-2 on surface (chart marks)"
     }
   ]
 }

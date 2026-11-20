@@ -78,6 +78,10 @@ Rules: white text on Sinal is forbidden (4.30). Sinal on Creme only for text 24p
 
 Labels and tags are uppercase mono with wide tracking. Prices and numbers use tabular figures. Fonts ship as woff2 in `@voaneves/brand/fonts/*` (OFL).
 
+### Charts
+
+One series in Sinal (`--vn-viz-1`), others neutral (`--vn-viz-2`, `--vn-viz-3`); at most 3 series; direct labels; sequential `--vn-viz-seq-1..5`, diverging `--vn-viz-div-*` (red negative, ink positive). Values in [references/tokens.md](references/tokens.md).
+
 ## Spacing, radius, layout
 
 - 8px base, 4px half-step: 4, 8, 12, 16, 24, 32, 40, 48, 64 (beat), 80, 96, 128 (breath), 160, 256 (pause).

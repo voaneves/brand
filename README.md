@@ -63,6 +63,7 @@ This repo is also a Claude Code plugin marketplace. The `voaneves-design-system`
 - [PLAN.md](PLAN.md)
 - [docs/decisions/](docs/decisions/)
 - [docs/voice-and-tone.md](docs/voice-and-tone.md): voice, tone and writing rules (PT/EN)
+- [docs/data-viz.md](docs/data-viz.md): chart palettes (categorical, sequential, diverging)
 - [docs/readme-spec.md](docs/readme-spec.md): README layout rules for VOANEVES project repos
 - Visual board: https://claude.ai/artifact/AhRNUHwhFocY2hyB45j3Mr (private until shared)
 

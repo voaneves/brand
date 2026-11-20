@@ -275,6 +275,126 @@
           },
           "$description": "White at 14% (hairline on inverse)."
         }
+      },
+      "chart": {
+        "$description": "Data-viz ramps derived by sRGB mixing of Creme, Tinta and Sinal. Only sys viz tokens may alias these.",
+        "seq-1": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8471,
+              0.8118,
+              0.7373
+            ],
+            "hex": "#d8cfbc"
+          },
+          "$description": "Sequential ramp step 1/5: Creme mixed toward Tinta (12%)."
+        },
+        "seq-2": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.6627,
+              0.6353,
+              0.5765
+            ],
+            "hex": "#a9a293"
+          },
+          "$description": "Sequential ramp step 2/5: Creme mixed toward Tinta (32%)."
+        },
+        "seq-3": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4784,
+              0.4627,
+              0.4196
+            ],
+            "hex": "#7a766b"
+          },
+          "$description": "Sequential ramp step 3/5: Creme mixed toward Tinta (52%)."
+        },
+        "seq-4": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.2588,
+              0.251,
+              0.2275
+            ],
+            "hex": "#42403a"
+          },
+          "$description": "Sequential ramp step 4/5: Creme mixed toward Tinta (76%)."
+        },
+        "seq-5": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0392,
+              0.0392,
+              0.0392
+            ],
+            "hex": "#0a0a0a"
+          },
+          "$description": "Sequential ramp step 5/5: Creme mixed toward Tinta (100%)."
+        },
+        "div-neg": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9569,
+              0.4588,
+              0.4157
+            ],
+            "hex": "#f4756a"
+          },
+          "$description": "50% Creme to Sinal (light-theme diverging, negative side)"
+        },
+        "div-pos": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.498,
+              0.4784,
+              0.4353
+            ],
+            "hex": "#7f7a6f"
+          },
+          "$description": "50% Creme to Tinta (light-theme diverging, positive side)"
+        },
+        "div-neg-dark": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.6157,
+              0.149,
+              0.149
+            ],
+            "hex": "#9d2626"
+          },
+          "$description": "60% Tinta to dark Sinal (dark-theme diverging, negative side)"
+        },
+        "div-pos-dark": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4745,
+              0.4549,
+              0.4078
+            ],
+            "hex": "#797468"
+          },
+          "$description": "50% Tinta to Creme 300 (dark-theme diverging, positive side)"
+        }
       }
     }
   }

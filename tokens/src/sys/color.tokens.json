@@ -260,6 +260,106 @@
           "dark": "{color.line}"
         }
       }
+    },
+    "viz-seq-1": {
+      "$type": "color",
+      "$value": "{ref.color.chart.seq-1}",
+      "$description": "Sequential ramp, step 1 of 5 (higher = more emphasis in both themes).",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.chart.seq-5}"
+        }
+      }
+    },
+    "viz-seq-2": {
+      "$type": "color",
+      "$value": "{ref.color.chart.seq-2}",
+      "$description": "Sequential ramp, step 2 of 5 (higher = more emphasis in both themes).",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.chart.seq-4}"
+        }
+      }
+    },
+    "viz-seq-3": {
+      "$type": "color",
+      "$value": "{ref.color.chart.seq-3}",
+      "$description": "Sequential ramp, step 3 of 5 (higher = more emphasis in both themes).",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.chart.seq-3}"
+        }
+      }
+    },
+    "viz-seq-4": {
+      "$type": "color",
+      "$value": "{ref.color.chart.seq-4}",
+      "$description": "Sequential ramp, step 4 of 5 (higher = more emphasis in both themes).",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.chart.seq-2}"
+        }
+      }
+    },
+    "viz-seq-5": {
+      "$type": "color",
+      "$value": "{ref.color.chart.seq-5}",
+      "$description": "Sequential ramp, step 5 of 5 (higher = more emphasis in both themes).",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.chart.seq-1}"
+        }
+      }
+    },
+    "viz-div-neg-2": {
+      "$type": "color",
+      "$value": "{color.signal}",
+      "$description": "Diverging: strongest negative.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.signal}"
+        }
+      }
+    },
+    "viz-div-neg-1": {
+      "$type": "color",
+      "$value": "{ref.color.chart.div-neg}",
+      "$description": "Diverging: mild negative.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.chart.div-neg-dark}"
+        }
+      }
+    },
+    "viz-div-mid": {
+      "$type": "color",
+      "$value": "{color.cream-soft}",
+      "$description": "Diverging: neutral midpoint.",
+      "$extensions": {
+        "vn": {
+          "dark": "{color.surface-soft}"
+        }
+      }
+    },
+    "viz-div-pos-1": {
+      "$type": "color",
+      "$value": "{ref.color.chart.div-pos}",
+      "$description": "Diverging: mild positive.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.chart.div-pos-dark}"
+        }
+      }
+    },
+    "viz-div-pos-2": {
+      "$type": "color",
+      "$value": "{color.ink}",
+      "$description": "Diverging: strongest positive.",
+      "$extensions": {
+        "vn": {
+          "dark": "{ref.color.cream.300}"
+        }
+      }
     }
   }
 }
