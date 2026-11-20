@@ -2,6 +2,14 @@
 
 Brand templates for Word, PowerPoint and Excel. Regenerate with `python scripts/build-templates.py` (needs `python-docx`, `python-pptx`, `openpyxl`, `pillow`).
 
+## Web and mail assets
+
+| File | Contents |
+|---|---|
+| `og-image.html` / `og-image.png` | 1200x630 Open Graph and social card on Tinta: mark, wordmark, label, headline, footer. Edit the HTML (fonts load from `../fonts/`), then export with `chrome --headless --window-size=1200,630 --screenshot=og-image.png og-image.html`. Keep the headline to two lines. |
+| `email-signature.html` | Table-based signature with inline styles and web-safe font fallbacks (Georgia, Arial, Courier New), signal rule, hosted PNG mark. Copy the table into Gmail, Outlook or Apple Mail settings; replace `[email]`. Contrast: ink and `#b80000` links on white pass AA. |
+| `assets/` | PNG marks (standard and reverse, 192 px) used by the files above. |
+
 ## Install the fonts first
 
 The files reference fonts by name and do not embed them. Install Fraunces, Schibsted Grotesk and JetBrains Mono from `fonts/source/` (OFL) before opening a template; without them Office falls back to a default font and the layout shifts.

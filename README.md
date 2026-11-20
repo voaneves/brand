@@ -33,7 +33,7 @@ Wordmark: **VOANEVES.** with the full stop in Sinal.
 - `motifs/`: decorative SVG waves
 - `board/`: sources for the visual board
 - `docs/`: decisions (ADRs), component specs, checklists, [README spec](docs/readme-spec.md)
-- `templates/`: Word, PowerPoint and Excel brand templates ([README](templates/README.md))
+- `templates/`: Word, PowerPoint, Excel, Open Graph image and email signature templates ([README](templates/README.md))
 - `scripts/`: build scripts
 - `tests/`: contrast, board, icon and font tests
 
