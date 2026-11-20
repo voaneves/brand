@@ -18,6 +18,8 @@ Pill, label type. Variants `--primary`, `--secondary`, `--signal`, `--ghost`; si
 - `.vn-chip` (32px pill), `.vn-icon-btn` (44px), `.vn-field` (border `--vn-line-strong`, invalid border `--vn-signal-ink`), `.vn-navbar`, `.vn-drawer`, `.vn-status-pill` (8px signal dot, pulse 3x 1600ms), `.vn-service-card`, `.vn-stat-card`, `.vn-timeline-item`, `.vn-work-row`, `.vn-marquee`, `.vn-credit`, `.vn-cursor` (custom cursor, disabled under reduced motion).
 ## Navigation
 
+- Drawer: `button[data-drawer-open][aria-controls]` + `aside.vn-drawer[hidden]` outside the navbar; `initDrawer()` from `@voaneves/brand/js/drawer.js` gives Esc, focus trap, inert page, focus return.
+
 - `nav > ol.vn-breadcrumb > li > a` (current: `span[aria-current=page]`); `nav > ul.vn-pagination > li > a` (current `aria-current=page`, `.vn-pagination__gap` for the ellipsis, real links); `footer.vn-footer > .vn-footer__inner` with `.vn-footer__title`, `.vn-footer__list`, `.vn-footer__link`, `.vn-footer__meta`.
 
 ## Form controls

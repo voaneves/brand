@@ -102,3 +102,40 @@ test('reduced motion: duration tokens collapse to 1ms and transitions are effect
   assert.ok(parseFloat(fullDur) >= 0.25, `expected 250ms without the preference, got ${fullDur}`);
   await normal.context().close();
 });
+
+test('drawer: opens with focus inside, traps Tab, makes the page inert, closes on Esc and returns focus', async () => {
+  const page = await open('NavBar', { viewport: { width: 600, height: 800 } });
+  const active = () => page.evaluate(() => document.activeElement.getAttribute('aria-label') ?? document.activeElement.textContent.trim());
+  assert.equal(await page.$eval('#drawer', (d) => d.hidden), true);
+  assert.equal(await page.$eval('#menu', (b) => b.getAttribute('aria-expanded')), 'false');
+
+  await page.focus('#menu');
+  await page.keyboard.press('Enter');
+  assert.equal(await page.$eval('#drawer', (d) => d.hidden), false);
+  assert.equal(await page.$eval('#menu', (b) => b.getAttribute('aria-expanded')), 'true');
+  assert.equal(await active(), 'Fechar menu');
+  assert.equal(await page.$eval('main', (m) => m.inert), true);
+  assert.equal(await page.$eval('header', (h) => h.inert), true);
+
+  // 4 focusables (close + 3 links): Tab wraps; Shift+Tab from the first goes to the last.
+  for (let i = 0; i < 4; i += 1) await page.keyboard.press('Tab');
+  assert.equal(await active(), 'Fechar menu');
+  await page.keyboard.press('Shift+Tab');
+  assert.match(await active(), /^Sobre/);
+  await page.keyboard.press('Tab');
+  assert.equal(await active(), 'Fechar menu');
+
+  await page.keyboard.press('Escape');
+  assert.equal(await page.$eval('#drawer', (d) => d.hidden), true);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'menu');
+  assert.equal(await page.$eval('#menu', (b) => b.getAttribute('aria-expanded')), 'false');
+  assert.equal(await page.$eval('main', (m) => m.inert), false);
+
+  // choosing an in-page link also closes it and restores focus
+  await page.keyboard.press('Enter');
+  await page.keyboard.press('Tab');
+  await page.keyboard.press('Enter');
+  assert.equal(await page.$eval('#drawer', (d) => d.hidden), true);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'menu');
+  await page.context().close();
+});

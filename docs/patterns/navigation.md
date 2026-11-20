@@ -7,7 +7,7 @@ Wayfinding with the brand components. Principle: signal, not noise. Few destinat
 - Contents: wordmark or lockup at the left (links to home), at most 5 destination links, one signal or primary action at the right ("Falar comigo"), theme toggle optional.
 - Labels are nouns or short verbs in sentence case; the current page gets `aria-current="page"` and a visible marker (underline, not color alone).
 - Landmarks: `<header>` with `<nav aria-label="Principal">`; a `.vn-skip-link` ("Pular para o conteúdo") is the first focusable element; one `<main>`.
-- Small screens: collapse links into `.vn-drawer` opened by a button with `aria-expanded` and `aria-controls`; the button label is "Menu"; links are 56px tall (`--vn-drawer-link-height`); focus returns to the button on close; closing with `Esc` is required behavior that the implementation must add (the CSS-only package does not ship it).
+- Small screens: collapse links into `.vn-drawer` opened by a button with `aria-expanded` and `aria-controls`; the button label is "Menu"; links are 56px tall (`--vn-drawer-link-height`); focus returns to the button on close; `initDrawer()` from `@voaneves/brand/js/drawer.js` provides `Esc`, a focus trap, inert background and focus return.
 - Sticky header is allowed; it must not cover focused elements (use `scroll-padding-top`).
 - Spec: [../components/navbar.md](../components/navbar.md).
 
