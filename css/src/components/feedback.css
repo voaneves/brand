@@ -77,6 +77,11 @@
     }
   }
 
+  .vn-toast[data-leaving] {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
   .vn-toast__message {
     flex: 1;
     margin: 0;

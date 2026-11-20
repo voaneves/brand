@@ -15,6 +15,18 @@ Confirmação rápida e não bloqueante ("Projeto excluído. Desfazer"). Não us
 - No máximo 2 toasts empilhados.
 - A região deve existir no DOM antes da mensagem para o leitor de tela anunciar.
 
+## Script (`@voaneves/brand/js/toast.js`)
+
+```js
+import { createToaster } from '@voaneves/brand/js/toast.js';
+const toaster = createToaster();            // creates the aria-live region if you pass none
+toaster.show({ message: 'Projeto excluído.', actionLabel: 'Desfazer', onAction: undo });
+```
+
+- `max` (padrão 2) toasts visíveis; os demais entram numa fila e aparecem quando um sai.
+- Duração padrão 6 s (10 s com ação); `duration: 0` mantém até dispensar. A contagem pausa com o ponteiro sobre o toast ou o foco dentro dele e retoma com o tempo restante.
+- A mensagem entra como texto (nunca HTML). `show()` devolve a função que dispensa; `dismissAll()` e `destroy()` limpam.
+
 ## Teclado
 
 `Tab` alcança a ação enquanto o toast está visível; `Enter`/`Espaço` aciona. O foco não é movido automaticamente.

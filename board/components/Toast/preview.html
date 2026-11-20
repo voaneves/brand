@@ -7,13 +7,23 @@
   <link rel="stylesheet" href="../../../dist/css/all.css" />
 </head>
 <body>
-  <main class="vn-section vn-container" style="min-height:240px;">
+  <main class="vn-section vn-container" style="min-height:240px;display:grid;gap:24px;align-content:start;">
     <div class="vn-toast-region" role="status" aria-live="polite" style="position:static;">
       <div class="vn-toast">
         <p class="vn-toast__message">Projeto excluído.</p>
         <button class="vn-toast__action" type="button">Desfazer</button>
       </div>
     </div>
+    <p><button class="vn-btn vn-btn--secondary vn-btn--md" type="button" id="demo">Mostrar toast</button></p>
+    <script type="module">
+      import { createToaster } from '../../../dist/js/toast.js';
+      const toaster = createToaster();
+      let n = 0;
+      document.getElementById('demo').addEventListener('click', () => {
+        n += 1;
+        toaster.show({ message: `Mensagem ${n} enviada.`, actionLabel: 'Desfazer' });
+      });
+    </script>
   </main>
 </body>
 </html>

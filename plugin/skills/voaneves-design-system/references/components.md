@@ -36,7 +36,7 @@ Pill, label type. Variants `--primary`, `--secondary`, `--signal`, `--ghost`; si
 ## Feedback
 
 - `.vn-alert` (`role=status`) with `.vn-alert__title/__body/__close`; `--error` uses a Sinal rule and signal-ink title (`role=alert`). No green or amber: meaning comes from the title text.
-- `.vn-toast` inside `.vn-toast-region[aria-live=polite]`: inverse surface, one action max, 6 s, pause on hover/focus, never for errors.
+- `.vn-toast` inside `.vn-toast-region[aria-live=polite]`: inverse surface, one action max, 6 s, pause on hover/focus, never for errors. `createToaster()` from `@voaneves/brand/js/toast.js` handles the region, max 2 visible plus a queue, and the pausing.
 
 ## Structure
 
