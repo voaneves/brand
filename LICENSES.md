@@ -1,5 +1,6 @@
 # Licenses
-nThe MIT License in `LICENSE` applies to source code only; see the table below for assets.
+
+The MIT License in `LICENSE` applies to source code only; see the table below for assets.
 
 | Asset | License | Obligation |
 |---|---|---|
