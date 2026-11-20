@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkbox — voaneves brand board</title>
+  <link rel="stylesheet" href="../../../dist/css/all.css" />
+</head>
+<body>
+  <main class="vn-section vn-container">
+    <fieldset class="vn-fieldset">
+      <legend>Serviços de interesse</legend>
+      <label class="vn-check"><input class="vn-check__input" type="checkbox" name="s" checked /><span class="vn-check__label">Site institucional</span></label>
+      <label class="vn-check"><input class="vn-check__input" type="checkbox" name="s" /><span class="vn-check__label">Dashboard e BI</span></label>
+      <label class="vn-check"><input class="vn-check__input" type="checkbox" name="s" id="ind" /><span class="vn-check__label">Selecionar todos (parcial)</span></label>
+      <label class="vn-check"><input class="vn-check__input" type="checkbox" name="s" disabled /><span class="vn-check__label">Indisponível</span></label>
+      <label class="vn-check"><input class="vn-check__input" type="checkbox" name="t" aria-invalid="true" aria-describedby="e1" /><span class="vn-check__label">Aceito os termos</span></label>
+      <p class="vn-field__error" id="e1">Aceite os termos para continuar.</p>
+    </fieldset>
+    <script>document.getElementById('ind').indeterminate = true;</script>
+  </main>
+</body>
+</html>

@@ -246,6 +246,12 @@
       "bg": "color.surface",
       "level": "UI",
       "name": "viz-div-pos-2 on surface (chart marks)"
+    },
+    {
+      "fg": "color.surface",
+      "bg": "color.text",
+      "level": "UI",
+      "name": "surface on text (forms)"
     }
   ]
 }

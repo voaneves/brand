@@ -27,10 +27,13 @@ export async function buildCss() {
   const resetCss = await fs.readFile(path.join(CSS_SRC, 'reset.css'), 'utf8');
   const typeCss = await fs.readFile(path.join(DIST_CSS, 'type.css'), 'utf8');
   const baseCss = await fs.readFile(path.join(CSS_SRC, 'base.css'), 'utf8');
-  const componentsCss = await fs.readFile(
-    path.join(CSS_SRC, 'components', 'components.css'),
-    'utf8',
-  );
+  // components.css first, then the other component files in name order.
+  const compDir = path.join(CSS_SRC, 'components');
+  const compFiles = (await fs.readdir(compDir)).filter((f) => f.endsWith('.css')).sort();
+  compFiles.sort((a, b) => Number(b === 'components.css') - Number(a === 'components.css'));
+  const componentsCss = `${(
+    await Promise.all(compFiles.map((f) => fs.readFile(path.join(compDir, f), 'utf8')))
+  ).map((c) => c.trim()).join('\n\n')}\n`;
 
   if (componentsCss.includes('--vn-ref-')) {
     throw new Error('components.css must not reference --vn-ref-* primitive tokens directly');

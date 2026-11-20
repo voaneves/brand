@@ -44,7 +44,8 @@
     { "fg": "viz-seq-4", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
     { "fg": "viz-seq-5", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
     { "fg": "viz-div-neg-2", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
-    { "fg": "viz-div-pos-2", "bg": "surface", "min": 3, "themes": ["light", "dark"] }
+    { "fg": "viz-div-pos-2", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
+    { "fg": "surface", "bg": "text", "min": 3, "themes": ["light", "dark"] }
   ],
   "banned": [
     { "fg": "ref-white", "bg": "surface-signal", "max": 4.5, "themes": ["light", "dark"], "note": "White must stay below 4.5:1 on Sinal" },
