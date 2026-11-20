@@ -1,3 +1,4 @@
 # tests
 
-Contrast, icon, font and board tests. Filled in M1.
+- `npm test`: contrast pairs, board grammar, icons, fonts, exports, Tailwind theme (no browser needed).
+- `npm run test:a11y`: axe-core (WCAG 2.2 A/AA rules) over every `board/components/*/preview.html` in light and dark, plus keyboard checks (tabs, modal, tooltip, drawer) and a reduced-motion check. Needs Chrome (`CHROME_PATH` to override) and a prior `npm run build`. Runs as the `a11y` job in CI.
