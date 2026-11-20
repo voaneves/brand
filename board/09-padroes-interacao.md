@@ -9,4 +9,5 @@ Módulos ES independentes sem dependências externas em `dist/js/*.js`.
 - `reveal.js` (`initReveal`): Revelação progressiva em scroll via `IntersectionObserver`.
 - `theme.js` (`initTheme`, `setTheme`, `toggleTheme`): Sincronização entre `localStorage` (`vn-theme`), preferência do sistema e `data-theme`.
 - `marquee.js` (`initMarquee`): Faixa contínua pausável via ponteiro ou foco de teclado.
+- `tooltip.js` (`initTooltip`): `Esc` dispensa tooltips abertos (WCAG 1.4.13) até o ponteiro ou o foco saírem.
 - `journey.js` (`initJourney`): Exposição da variável `--vn-journey-progress` (`0..1`) conforme scroll.

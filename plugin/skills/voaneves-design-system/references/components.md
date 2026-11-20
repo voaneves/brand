@@ -16,4 +16,24 @@ Pill, label type. Variants `--primary`, `--secondary`, `--signal`, `--ghost`; si
 ## Other components
 
 - `.vn-chip` (32px pill), `.vn-icon-btn` (44px), `.vn-field` (border `--vn-line-strong`, invalid border `--vn-signal-ink`), `.vn-navbar`, `.vn-drawer`, `.vn-status-pill` (8px signal dot, pulse 3x 1600ms), `.vn-service-card`, `.vn-stat-card`, `.vn-timeline-item`, `.vn-work-row`, `.vn-marquee`, `.vn-credit`, `.vn-cursor` (custom cursor, disabled under reduced motion).
+## Form controls
+
+- `.vn-field` + `.vn-field__label`, `.vn-field__input` (input, `textarea.vn-field__input`), `.vn-field__hint`, `.vn-field__error`, `.vn-field__required`. Invalid: `aria-invalid="true"` (2px `--vn-signal-ink` border) + `aria-describedby` to the error.
+- `.vn-select > select.vn-field__input` (native select, custom chevron).
+- `.vn-check > input.vn-check__input[type=checkbox|radio] + .vn-check__label`; group with `fieldset.vn-fieldset > legend`. Radio dot is Sinal.
+- Focus ring on controls: 2px, offset 2px. Disabled: opacity .45.
+
+## Feedback
+
+- `.vn-alert` (`role=status`) with `.vn-alert__title/__body/__close`; `--error` uses a Sinal rule and signal-ink title (`role=alert`). No green or amber: meaning comes from the title text.
+- `.vn-toast` inside `.vn-toast-region[aria-live=polite]`: inverse surface, one action max, 6 s, pause on hover/focus, never for errors.
+
+## Structure
+
+- `.vn-table-wrap[role=region][tabindex=0] > table.vn-table` with `caption`, `th scope`, `.vn-table__num`, sortable `th[aria-sort] > button`.
+- `.vn-tabs__list[role=tablist] > .vn-tabs__tab[role=tab]` + `.vn-tabs__panel[role=tabpanel]`; arrows/Home/End, roving tabindex, selected indicator in Sinal.
+- `dialog.vn-modal` opened with `showModal()`; `form[method=dialog].vn-modal__actions`; autofocus the safe action.
+- `.vn-tooltip > trigger + .vn-tooltip__content[role=tooltip]` with `aria-describedby`; `initTooltip()` from `@voaneves/brand/js/tooltip.js` makes `Esc` dismiss it.
+- Always: focus-visible, 44px targets, reduced motion handled by `--vn-dur-*`.
+
 - Full specs: https://github.com/voaneves/brand/tree/main/docs/components

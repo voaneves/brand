@@ -9,5 +9,7 @@ Todos os componentes utilizam prefixo `.vn-*` em `@layer vn.components` e consom
 - **Chips & Status (`.vn-chip`, `.vn-status-pill`):** Rótulos compactos em mono; pulso finito de `3` iterações no indicador de disponibilidade.
 - **Navegação (`.vn-navbar`, `.vn-drawer`):** Cabeçalho fixo translúcido com menu lateral acessível em superfície inversa.
 - **Conteúdo (`.vn-service-card`, `.vn-stat-card`, `.vn-work-row`, `.vn-timeline-item`):** Estruturas de portfólio, métricas e carreira.
-- **Formulário (`.vn-field`):** Campos acessíveis com estado inválido destacado em `--vn-signal-ink`.
+- **Formulário (`.vn-field`, `.vn-select`, `.vn-check`, `.vn-fieldset`):** Campo, textarea, select nativo, checkbox e radio com estado inválido em `--vn-signal-ink`, foco de `2px` e alvo mínimo de `44px`.
+- **Feedback (`.vn-alert`, `.vn-toast`):** Alerta persistente (neutro ou `--error`) e toast transitório com região `aria-live`.
+- **Estrutura (`.vn-table`, `.vn-tabs`, `.vn-modal`, `.vn-tooltip`):** Tabela com cabeçalho mono, abas ARIA, diálogo nativo `<dialog>` e tooltip dispensável por `Esc`.
 - **Colofão (`.vn-credit`):** Assinatura compacta "Feito por voaneves".

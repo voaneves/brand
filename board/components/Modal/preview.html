@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modal — voaneves brand board</title>
+  <link rel="stylesheet" href="../../../dist/css/all.css" />
+</head>
+<body>
+  <main class="vn-section vn-container">
+    <button class="vn-btn vn-btn--primary vn-btn--md" type="button" id="open">Excluir projeto</button>
+    <dialog class="vn-modal" id="dlg" aria-labelledby="dt" aria-describedby="dd">
+      <h2 class="vn-modal__title" id="dt">Excluir este projeto?</h2>
+      <p class="vn-modal__body" id="dd">Essa ação não pode ser desfeita. Os arquivos do projeto também serão removidos.</p>
+      <form method="dialog" class="vn-modal__actions">
+        <button class="vn-btn vn-btn--secondary vn-btn--md" value="cancel" autofocus>Cancelar</button>
+        <button class="vn-btn vn-btn--primary vn-btn--md" value="confirm">Excluir projeto</button>
+      </form>
+    </dialog>
+    <script>
+      const dlg = document.getElementById('dlg');
+      document.getElementById('open').addEventListener('click', () => dlg.showModal());
+      if (location.hash === '#open') dlg.showModal();
+    </script>
+  </main>
+</body>
+</html>

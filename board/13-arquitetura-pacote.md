@@ -14,7 +14,7 @@
 | `@voaneves/brand/tailwind/theme.css` | Tema Tailwind v4 (`@theme inline`) gerado dos tokens |
 | `@voaneves/brand/tokens.json` | Valores resolvidos nos dois temas |
 | `@voaneves/brand/tokens` | Objeto JS tipado + `.d.ts` |
-| `@voaneves/brand/js/*` | Módulos ES (`cursor`, `magnetic`, `reveal`, `theme`, `marquee`, `journey`) |
+| `@voaneves/brand/js/*` | Módulos ES (`cursor`, `magnetic`, `reveal`, `theme`, `marquee`, `journey`, `tooltip`) |
 | `@voaneves/brand/astro/*` | Componentes fonte `Logo.astro`, `Icon.astro`, `Credit.astro` |
 | `@voaneves/brand/icons/*` | 19 SVGs e `sprite.svg` |
 | `@voaneves/brand/logo/*` | Variantes canônicas do Conceito B |
