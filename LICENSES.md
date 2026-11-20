@@ -10,3 +10,4 @@ The MIT License in `LICENSE` applies to source code only; see the table below fo
 | Iconic | CC BY-SA 3.0 | Attribution and share-alike for those SVGs. Mark them in the file header; replace them by M5 if share-alike is unwanted. |
 | Zondicons | CC BY 4.0 | Attribution |
 | Logo, wordmark, photos, motifs | All rights reserved (not MIT) | Marcas e fotografias: todos os direitos reservados; uso apenas com autorização. |
+| Templates (`templates/`) | Layout and styles MIT; embedded logo all rights reserved | For VOANEVES use. Other users: replace the logo with your own before sharing. |
