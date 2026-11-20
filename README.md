@@ -41,6 +41,14 @@ Wordmark: **VOANEVES.** with the full stop in Sinal.
 
 Planned: `npm i @voaneves/brand`, then import `@voaneves/brand/css/all.css`.
 
+Tailwind CSS v4: map utilities to the tokens (`bg-surface`, `text-signal-ink`, `font-display`, `text-h2`, `rounded-xl`, `shadow-pop`).
+
+```css
+@import "tailwindcss";
+@import "@voaneves/brand/css/all.css";
+@import "@voaneves/brand/tailwind/theme.css";
+```
+
 ## Use with Claude Code
 
 This repo is also a Claude Code plugin marketplace. The `voaneves-design-system` plugin gives Claude the tokens, type scale, logo rules and accessibility checks for building in this brand.

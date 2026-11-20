@@ -126,6 +126,7 @@ Also `css/tokens.css`, `css/fonts.css`, `css/base.css`, `css/components.css`, JS
 
 - Custom properties are prefixed `--vn-`: `--vn-signal`, `--vn-surface`, `--vn-text`, `--vn-text-muted`, `--vn-font-display`, `--vn-space-5`, `--vn-radius-xl`, `--vn-dur-hover`, `--vn-type-h2-size`. Colors use `light-dark()`; force a theme with `data-theme="light|dark"` on a root element.
 - Components use the `.vn-*` namespace (`.vn-btn--primary`, `.vn-chip`, `.vn-field`, `.vn-navbar`, `.vn-service-card`, `.vn-stat-card`, `.vn-status-pill`). See [references/components.md](references/components.md).
+- Tailwind v4: also `@import "@voaneves/brand/tailwind/theme.css"` after `all.css`; utilities are `bg-surface`, `text-text-muted`, `text-signal-ink`, `font-display`, `text-h2`, `rounded-xl`, `shadow-pop`, `ease-out`. The default Tailwind palette is removed.
 - Reference tokens, never hard-code hex in components. Outside the web, use the hex values above.
 
 ## READMEs

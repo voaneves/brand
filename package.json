@@ -29,6 +29,7 @@
     "./css/base.css": "./dist/css/base.css",
     "./css/components.css": "./dist/css/components.css",
     "./css/all.css": "./dist/css/all.css",
+    "./tailwind/theme.css": "./dist/tailwind/theme.css",
     "./tokens": {
       "types": "./dist/tokens.d.ts",
       "default": "./dist/tokens.js"
@@ -59,9 +60,10 @@
     "provenance": true
   },
   "scripts": {
-    "build": "npm run build:tokens && npm run build:fonts && npm run build:icons && npm run build:css && npm run build:board",
+    "build": "npm run build:tokens && npm run build:fonts && npm run build:icons && npm run build:css && npm run build:tailwind && npm run build:board",
     "build:tokens": "node scripts/build-tokens.mjs",
     "build:css": "node scripts/build-css.mjs",
+    "build:tailwind": "node scripts/build-tailwind.mjs",
     "build:icons": "node scripts/build-icons.mjs",
     "normalize:icons": "node scripts/normalize-icons.mjs",
     "build:fonts": "node scripts/build-fonts.mjs",
