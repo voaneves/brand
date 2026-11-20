@@ -32,7 +32,7 @@ Wordmark: **VOANEVES.** with the full stop in Sinal.
 - `app-icons/`: favicon, touch and PWA icons
 - `motifs/`: decorative SVG waves
 - `board/`: sources for the visual board
-- `docs/`: decisions (ADRs), component specs, checklists
+- `docs/`: decisions (ADRs), component specs, checklists, [README spec](docs/readme-spec.md)
 - `scripts/`: build scripts
 - `tests/`: contrast, board, icon and font tests
 
@@ -44,6 +44,7 @@ Planned: `npm i @voaneves/brand`, then import `@voaneves/brand/css/all.css`.
 
 - [PLAN.md](PLAN.md)
 - [docs/decisions/](docs/decisions/)
+- [docs/readme-spec.md](docs/readme-spec.md): README layout rules for VOANEVES project repos
 - Visual board: https://claude.ai/artifact/AhRNUHwhFocY2hyB45j3Mr (private until shared)
 
 ## Licensing
