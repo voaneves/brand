@@ -26,6 +26,9 @@ Pill, label type. Variants `--primary`, `--secondary`, `--signal`, `--ghost`; si
 
 - `nav > ol.vn-breadcrumb > li > a` (current: `span[aria-current=page]`); `nav > ul.vn-pagination > li > a` (current `aria-current=page`, `.vn-pagination__gap` for the ellipsis, real links); `footer.vn-footer > .vn-footer__inner` with `.vn-footer__title`, `.vn-footer__list`, `.vn-footer__link`, `.vn-footer__meta`.
 
+- Content: `.vn-chip` (tag, non-interactive), `.vn-work-row`, `.vn-timeline-item` (in an `ol`), `.vn-marquee[data-marquee]` (decorative, duplicate half aria-hidden), `.vn-cursor` (aria-hidden, desktop only, `initCursor()`).
+- Contributing a component: spec from `docs/components/_template.md` + preview + contrast pairs; every `.vn-*` block needs both (tested). Naming: `docs/governance/naming.md`.
+
 ## Form controls
 
 - `.vn-field` + `.vn-field__label`, `.vn-field__input` (input, `textarea.vn-field__input`), `.vn-field__hint`, `.vn-field__error`, `.vn-field__required`. Invalid: `aria-invalid="true"` (2px `--vn-signal-ink` border) + `aria-describedby` to the error.

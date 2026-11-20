@@ -8,6 +8,9 @@ Component spec cards. Each card lists anatomy, tokens, states, keyboard behavior
 | Form controls | [field](field.md), [textarea](textarea.md), [select](select.md), [checkbox](checkbox.md), [radio](radio.md), [switch](switch.md) |
 | Feedback | [alert](alert.md), [toast](toast.md), [status-pill](status-pill.md), [badge](badge.md), [progress](progress.md), [skeleton](skeleton.md), [empty-state](empty-state.md) |
 | Structure | [table](table.md), [tabs](tabs.md), [modal](modal.md), [tooltip](tooltip.md), [accordion](accordion.md) |
-| Content | [service-card](service-card.md), [stat-card](stat-card.md), [credit](credit.md) |
+| Content | [service-card](service-card.md), [stat-card](stat-card.md), [work-row](work-row.md), [timeline-item](timeline-item.md), [chip](chip.md), [credit](credit.md) |
+| Motion and cursor | [marquee](marquee.md), [cursor](cursor.md) |
+
+New specs start from [_template.md](_template.md); `tests/components-coverage.test.js` fails when a `.vn-*` block has no spec or preview.
 
 Rules: consume semantic and component tokens only (never `--vn-ref-*`), focus ring `2px` `--vn-focus`, touch target at least `44px`, all motion uses `--vn-dur-*` (becomes `1ms` under `prefers-reduced-motion`).
