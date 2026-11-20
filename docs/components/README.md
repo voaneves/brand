@@ -4,7 +4,7 @@ Component spec cards. Each card lists anatomy, tokens, states, keyboard behavior
 
 | Group | Components |
 |---|---|
-| Actions | [button](button.md), [navbar](navbar.md) |
+| Actions and navigation | [button](button.md), [navbar](navbar.md), [breadcrumb](breadcrumb.md), [pagination](pagination.md), [footer](footer.md) |
 | Form controls | [field](field.md), [textarea](textarea.md), [select](select.md), [checkbox](checkbox.md), [radio](radio.md) |
 | Feedback | [alert](alert.md), [toast](toast.md), [status-pill](status-pill.md) |
 | Structure | [table](table.md), [tabs](tabs.md), [modal](modal.md), [tooltip](tooltip.md) |

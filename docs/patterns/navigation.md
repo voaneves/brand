@@ -20,7 +20,7 @@ For hierarchies of 3 or more levels (docs, case studies). Not on the home page o
   <ol class="vn-breadcrumb">
     <li><a href="/">Início</a></li>
     <li><a href="/projetos/">Projetos</a></li>
-    <li aria-current="page">Design system</li>
+    <li><span aria-current="page">Design system</span></li>
   </ol>
 </nav>
 ```
@@ -28,7 +28,7 @@ For hierarchies of 3 or more levels (docs, case studies). Not on the home page o
 - Style with the `label` or `caption` type; separator `/` drawn by CSS (`li + li::before`), so it is not read aloud.
 - Current page is text, not a link. Links use `--vn-signal-ink` only if they appear in running text; in the trail use `--vn-text-muted` with underline on hover and focus.
 - On narrow screens show only the parent level ("← Projetos") to avoid wrapping.
-- There is no `.vn-breadcrumb` class yet; until it ships, apply these rules with utilities (Tailwind theme) or local CSS using tokens.
+- Spec: [../components/breadcrumb.md](../components/breadcrumb.md).
 
 ## Pagination
 
@@ -49,7 +49,7 @@ Use for long lists where users need to return to a position (archives, search re
 - Targets at least 44px (`--vn-layout-touch-min`); numbers in mono with tabular figures; current page has `aria-current="page"` and a filled `--vn-surface-inverse` pill.
 - Show first, last, current and its neighbors; ellipsis is text with `aria-hidden`.
 - Real links (`href`), so it works without JavaScript and the URL is shareable. Announce results count with `role="status"` ("12 projetos").
-- `.vn-pagination` is a pattern recipe, not yet a shipped class.
+- Spec: [../components/pagination.md](../components/pagination.md).
 
 ## Footer
 
@@ -57,6 +57,7 @@ Use for long lists where users need to return to a position (archives, search re
 - Ground: `--vn-surface-inverse`; text `--vn-text-on-inverse`, meta `--vn-text-muted-on-inverse`; hairlines `--vn-line-on-dark`.
 - The client-project credit is the `.vn-credit` snippet ("Feito por voaneves") at the bottom, discreet; own pages show the wordmark `VOANEVES.` and the year.
 - Links are text links with visible underline on hover and a 44px target; icons (GitHub, LinkedIn) always carry an accessible name.
+- Spec: [../components/footer.md](../components/footer.md).
 - Include the hire line from the README spec on own project pages: "Precisa de algo assim? Vamos conversar →".
 
 ## Links, buttons and focus

@@ -16,6 +16,10 @@ Pill, label type. Variants `--primary`, `--secondary`, `--signal`, `--ghost`; si
 ## Other components
 
 - `.vn-chip` (32px pill), `.vn-icon-btn` (44px), `.vn-field` (border `--vn-line-strong`, invalid border `--vn-signal-ink`), `.vn-navbar`, `.vn-drawer`, `.vn-status-pill` (8px signal dot, pulse 3x 1600ms), `.vn-service-card`, `.vn-stat-card`, `.vn-timeline-item`, `.vn-work-row`, `.vn-marquee`, `.vn-credit`, `.vn-cursor` (custom cursor, disabled under reduced motion).
+## Navigation
+
+- `nav > ol.vn-breadcrumb > li > a` (current: `span[aria-current=page]`); `nav > ul.vn-pagination > li > a` (current `aria-current=page`, `.vn-pagination__gap` for the ellipsis, real links); `footer.vn-footer > .vn-footer__inner` with `.vn-footer__title`, `.vn-footer__list`, `.vn-footer__link`, `.vn-footer__meta`.
+
 ## Form controls
 
 - `.vn-field` + `.vn-field__label`, `.vn-field__input` (input, `textarea.vn-field__input`), `.vn-field__hint`, `.vn-field__error`, `.vn-field__required`. Invalid: `aria-invalid="true"` (2px `--vn-signal-ink` border) + `aria-describedby` to the error.
