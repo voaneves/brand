@@ -2,6 +2,8 @@
 
 Every view has three non-happy states. Design them on purpose: say what is happening, then the next step. Microcopy follows [voice-and-tone.md](../voice-and-tone.md): direct, calm, no exclamation marks, no blame.
 
+Components: [skeleton](../components/skeleton.md), [empty-state](../components/empty-state.md), [progress](../components/progress.md), [alert](../components/alert.md).
+
 ## Empty
 
 A list, table or dashboard with nothing to show yet.

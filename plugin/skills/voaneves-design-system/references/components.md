@@ -16,6 +16,10 @@ Pill, label type. Variants `--primary`, `--secondary`, `--signal`, `--ghost`; si
 ## Other components
 
 - `.vn-chip` (32px pill), `.vn-icon-btn` (44px), `.vn-field` (border `--vn-line-strong`, invalid border `--vn-signal-ink`), `.vn-navbar`, `.vn-drawer`, `.vn-status-pill` (8px signal dot, pulse 3x 1600ms), `.vn-service-card`, `.vn-stat-card`, `.vn-timeline-item`, `.vn-work-row`, `.vn-marquee`, `.vn-credit`, `.vn-cursor` (custom cursor, disabled under reduced motion).
+## States and content
+
+- `.vn-skeleton` (`--text|--block|--circle`, aria-hidden, shimmer 3x then stops; region `aria-busy`); `.vn-empty` (`__title/__body/__actions`); `.vn-badge` (`--solid|--signal`, text carries meaning); `label.vn-switch > input.vn-switch__input[role=switch]`; `progress.vn-progress` (always labelled); `.vn-accordion > details.vn-accordion__item > summary.vn-accordion__summary + .vn-accordion__panel`.
+
 ## Navigation
 
 - Drawer: `button[data-drawer-open][aria-controls]` + `aside.vn-drawer[hidden]` outside the navbar; `initDrawer()` from `@voaneves/brand/js/drawer.js` gives Esc, focus trap, inert page, focus return.

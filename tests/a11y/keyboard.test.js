@@ -146,3 +146,31 @@ test('reduced motion: drawer and modal transitions collapse', async () => {
   assert.ok(drawer.split(',').every((d) => parseFloat(d) <= 0.001), `drawer transition-duration is ${drawer}`);
   await page.context().close();
 });
+
+test('switch and accordion: toggle with the keyboard', async () => {
+  const sw = await open('Switch');
+  await sw.focus('.vn-switch__input');
+  assert.equal(await sw.$eval('.vn-switch__input', (i) => i.checked), true);
+  await sw.keyboard.press('Space');
+  assert.equal(await sw.$eval('.vn-switch__input', (i) => i.checked), false);
+  await sw.context().close();
+
+  const acc = await open('Accordion');
+  const items = () => acc.$$eval('details', (d) => d.map((x) => x.open));
+  assert.deepEqual(await items(), [true, false]);
+  await acc.focus('details:nth-of-type(2) > summary');
+  await acc.keyboard.press('Enter');
+  assert.deepEqual(await items(), [true, true]);
+  await acc.keyboard.press('Space');
+  assert.deepEqual(await items(), [true, false]);
+  await acc.context().close();
+});
+
+test('reduced motion: skeleton shimmer is off', async () => {
+  const page = await open('Skeleton', { reducedMotion: 'reduce' });
+  assert.equal(await page.$eval('.vn-skeleton', (el) => getComputedStyle(el).animationName), 'none');
+  await page.context().close();
+  const normal = await open('Skeleton');
+  assert.notEqual(await normal.$eval('.vn-skeleton', (el) => getComputedStyle(el).animationName), 'none');
+  await normal.context().close();
+});
