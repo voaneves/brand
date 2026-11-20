@@ -66,6 +66,7 @@ This repo is also a Claude Code plugin marketplace. The `voaneves-design-system`
 - [docs/data-viz.md](docs/data-viz.md): chart palettes (categorical, sequential, diverging)
 - [docs/components/](docs/components/README.md) and [docs/patterns/](docs/patterns/forms.md): component specs and forms, states and navigation patterns
 - [docs/readme-spec.md](docs/readme-spec.md): README layout rules for VOANEVES project repos
+- Gallery (tokens, type, every component, theme toggle): https://voaneves.github.io/brand/
 - Visual board: https://claude.ai/artifact/AhRNUHwhFocY2hyB45j3Mr (private until shared)
 
 ## Licensing

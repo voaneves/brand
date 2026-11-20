@@ -38,6 +38,22 @@ for (const scheme of ['light', 'dark']) {
   }
 }
 
+for (const scheme of ['light', 'dark']) {
+  test(`axe WCAG 2.2 AA: gallery page (${scheme})`, async () => {
+    const page = await newPage(browser, { colorScheme: scheme });
+    try {
+      await page.goto(`${previewUrl('Button').split('/board/')[0]}/dist/site/index.html`);
+      await page.waitForLoadState('load');
+      await page.waitForTimeout(800);
+      const violations = await runAxe(page);
+      assert.equal(violations.length, 0, `
+${formatViolations(violations)}`);
+    } finally {
+      await page.context().close();
+    }
+  });
+}
+
 test('axe harness detects a known violation (guards against a silent no-op)', async () => {
   const page = await newPage(browser);
   try {

@@ -137,6 +137,8 @@ Also `css/tokens.css`, `css/fonts.css`, `css/base.css`, `css/components.css`, JS
 
 Direct, concrete, honest, warm. Lead with the point; concrete verbs, no superlatives (enterprise, comprehensive, turnkey); never invent numbers; sentence case headings and buttons; one call to action written as a verb; no exclamation marks in UI; pt-BR primary with a direct EN mirror. Fixed line: "Engenheiro mecânico que virou designer e desenvolvedor." UI patterns (empty, error, loading) and PT/EN examples: https://github.com/voaneves/brand/blob/main/docs/voice-and-tone.md
 
+Live gallery (tokens, type, every component, light/dark): https://voaneves.github.io/brand/
+
 ## Patterns
 
 Forms (label above, hint, validate on submit then blur, `aria-invalid` + error text, summary alert, specific submit label), states (empty: title + next step; error by scope; loading: nothing under 1 s, skeleton, "Enviando…") and navigation (skip link, one `<main>`, `aria-current`, breadcrumb, pagination as real links, footer) are in https://github.com/voaneves/brand/tree/main/docs/patterns

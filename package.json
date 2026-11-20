@@ -60,10 +60,11 @@
     "provenance": true
   },
   "scripts": {
-    "build": "npm run build:tokens && npm run build:fonts && npm run build:icons && npm run build:css && npm run build:tailwind && npm run build:board",
+    "build": "npm run build:tokens && npm run build:fonts && npm run build:icons && npm run build:css && npm run build:tailwind && npm run build:board && npm run build:gallery",
     "build:tokens": "node scripts/build-tokens.mjs",
     "build:css": "node scripts/build-css.mjs",
     "build:tailwind": "node scripts/build-tailwind.mjs",
+    "build:gallery": "node scripts/build-gallery.mjs",
     "build:icons": "node scripts/build-icons.mjs",
     "normalize:icons": "node scripts/normalize-icons.mjs",
     "build:fonts": "node scripts/build-fonts.mjs",
