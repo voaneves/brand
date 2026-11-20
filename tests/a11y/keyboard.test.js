@@ -139,3 +139,10 @@ test('drawer: opens with focus inside, traps Tab, makes the page inert, closes o
   assert.equal(await page.evaluate(() => document.activeElement.id), 'menu');
   await page.context().close();
 });
+
+test('reduced motion: drawer and modal transitions collapse', async () => {
+  const page = await open('NavBar', { reducedMotion: 'reduce' });
+  const drawer = await page.$eval('#drawer', (d) => getComputedStyle(d).transitionDuration);
+  assert.ok(drawer.split(',').every((d) => parseFloat(d) <= 0.001), `drawer transition-duration is ${drawer}`);
+  await page.context().close();
+});

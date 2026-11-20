@@ -282,6 +282,12 @@
     outline-color: var(--vn-signal);
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    .vn-drawer {
+      transition-duration: 1ms;
+    }
+  }
+
   .vn-navbar__menu {
     display: none;
   }

@@ -22,4 +22,4 @@ Barra de navegação superior fixa com fundo translúcido e gaveta lateral móve
 - `Tab` e `Shift+Tab` circulam apenas dentro da gaveta; `Esc`, `[data-drawer-close]` ou um link interno (`href="#..."`) fecham; o foco volta ao botão que abriu.
 - A gaveta fica fora de `.vn-navbar` (o `backdrop-filter` da barra vira o bloco de contenção de elementos `position: fixed`).
 - `.vn-navbar__menu` aparece e os links da barra somem abaixo de `720px`.
-- Movimento: entrada por `translateX` em `--vn-drawer-duration` (`1ms` sob `prefers-reduced-motion` via `--vn-dur-*`; a duração própria da gaveta segue o token do componente).
+- Movimento: entrada por `translateX` em `--vn-drawer-duration` (`450ms`); sob `prefers-reduced-motion` a transição vira `1ms`.
