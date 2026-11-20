@@ -1,0 +1,109 @@
+@layer vn.components {
+  /* Alert: inline, persistent message. Neutral by default, --error in Sinal. */
+  .vn-alert {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--vn-space-1) var(--vn-space-4);
+    padding: var(--vn-space-4) var(--vn-space-5);
+    border-inline-start: 4px solid var(--vn-text);
+    border-radius: var(--vn-radius-sm);
+    background-color: var(--vn-surface-soft);
+    color: var(--vn-text);
+  }
+
+  .vn-alert--error {
+    border-inline-start-color: var(--vn-signal);
+  }
+
+  .vn-alert__title {
+    grid-column: 1;
+    margin: 0;
+    font-size: var(--vn-type-body-strong-size);
+    line-height: var(--vn-type-body-strong-line-height);
+    font-weight: var(--vn-type-body-strong-weight);
+  }
+
+  .vn-alert--error .vn-alert__title {
+    color: var(--vn-signal-ink);
+  }
+
+  .vn-alert__body {
+    grid-column: 1;
+    margin: 0;
+    font-size: var(--vn-type-body-sm-size);
+    line-height: var(--vn-type-body-sm-line-height);
+  }
+
+  .vn-alert__close {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+
+  /* Toast: transient, non-blocking. Place inside .vn-toast-region (aria-live). */
+  .vn-toast-region {
+    position: fixed;
+    inset-block-end: var(--vn-space-5);
+    inset-inline-start: var(--vn-space-5);
+    z-index: var(--vn-z-drawer);
+    display: flex;
+    flex-direction: column;
+    gap: var(--vn-space-3);
+    max-width: min(420px, calc(100vw - var(--vn-space-6)));
+    pointer-events: none;
+  }
+
+  .vn-toast {
+    display: flex;
+    align-items: center;
+    gap: var(--vn-space-4);
+    padding: var(--vn-space-3) var(--vn-space-3) var(--vn-space-3) var(--vn-space-5);
+    border-radius: var(--vn-radius-lg);
+    background-color: var(--vn-surface-inverse);
+    color: var(--vn-text-on-inverse);
+    box-shadow: var(--vn-shadow-lift);
+    font-size: var(--vn-type-body-sm-size);
+    line-height: var(--vn-type-body-sm-line-height);
+    pointer-events: auto;
+    transition:
+      opacity var(--vn-dur-hover) var(--vn-ease-out),
+      transform var(--vn-dur-hover) var(--vn-ease-out);
+  }
+
+  @starting-style {
+    .vn-toast {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+
+  .vn-toast__message {
+    flex: 1;
+    margin: 0;
+  }
+
+  .vn-toast__action {
+    flex: none;
+    min-height: var(--vn-layout-touch-min);
+    padding-inline: var(--vn-space-3);
+    border: 0;
+    background: transparent;
+    color: var(--vn-text-on-inverse);
+    font-family: var(--vn-type-label-family);
+    font-size: var(--vn-type-label-size);
+    font-weight: var(--vn-type-label-weight);
+    letter-spacing: var(--vn-type-label-tracking);
+    text-transform: var(--vn-type-label-transform);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
+  }
+
+  .vn-toast__action:hover {
+    color: var(--vn-signal);
+  }
+
+  .vn-toast :focus-visible {
+    outline-color: var(--vn-signal);
+  }
+}
