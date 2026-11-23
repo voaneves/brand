@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cursor — voaneves brand board</title>
+  <link rel="stylesheet" href="../../../dist/css/all.css" />
+</head>
+<body>
+  <main class="vn-section vn-container">
+    <p class="vn-type-body">Mova o mouse sobre o cartão (ponteiro fino, sem movimento reduzido).</p>
+    <a class="vn-btn vn-btn--primary vn-btn--lg" href="#ver" data-cursor-label="Ver">Ver projeto</a>
+  </main>
+  <div class="vn-cursor" aria-hidden="true">
+    <span class="vn-cursor__lens"></span>
+    <span class="vn-cursor__dot"></span>
+    <span class="vn-cursor__label"></span>
+  </div>
+  <script type="module">
+    import { initCursor } from '../../../dist/js/cursor.js';
+    initCursor();
+  </script>
+</body>
+</html>

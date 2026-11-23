@@ -1,0 +1,178 @@
+@layer vn.components {
+  /* Form controls: extends .vn-field (input), adds textarea, select, checkbox, radio */
+  .vn-field__hint {
+    font-size: var(--vn-type-caption-size);
+    line-height: var(--vn-type-caption-line-height);
+    color: var(--vn-text-muted);
+  }
+
+  .vn-field__required {
+    color: var(--vn-signal-ink);
+  }
+
+  .vn-field__input:hover:not(:disabled):not([aria-invalid="true"]) {
+    border-color: var(--vn-text);
+  }
+
+  .vn-field__input:focus-visible {
+    outline-offset: 2px;
+  }
+
+  .vn-field__input::placeholder {
+    color: var(--vn-text-muted);
+    opacity: 1;
+  }
+
+  .vn-field__input:disabled {
+    opacity: var(--vn-opacity-disabled);
+    cursor: not-allowed;
+  }
+
+  .vn-field__input[aria-invalid="true"] {
+    border-width: 2px;
+    padding: calc(var(--vn-space-3) - 1px) calc(var(--vn-space-4) - 1px);
+  }
+
+  /* Textarea */
+  textarea.vn-field__input {
+    min-height: 120px;
+    resize: vertical;
+    line-height: var(--vn-type-body-sm-line-height);
+  }
+
+  /* Select (native element, custom chevron) */
+  .vn-select {
+    position: relative;
+    display: block;
+  }
+
+  .vn-select > .vn-field__input {
+    appearance: none;
+    padding-inline-end: var(--vn-space-8);
+    cursor: pointer;
+  }
+
+  .vn-select::after {
+    content: "";
+    position: absolute;
+    inset-inline-end: var(--vn-space-5);
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--vn-text);
+    border-bottom: 2px solid var(--vn-text);
+    transform: translateY(-70%) rotate(45deg);
+    pointer-events: none;
+  }
+
+  /* Checkbox and radio */
+  .vn-check {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--vn-space-3);
+    min-height: var(--vn-layout-touch-min);
+    cursor: pointer;
+    color: var(--vn-text);
+  }
+
+  .vn-check__input {
+    appearance: none;
+    flex: none;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    border: 1.5px solid var(--vn-field-border);
+    border-radius: var(--vn-radius-xs);
+    background-color: var(--vn-surface-raised);
+    cursor: pointer;
+    transition:
+      background-color var(--vn-dur-hover) var(--vn-ease-out),
+      border-color var(--vn-dur-hover) var(--vn-ease-out);
+  }
+
+  .vn-check__input:hover:not(:disabled) {
+    border-color: var(--vn-text);
+  }
+
+  .vn-check__input[type="checkbox"]:checked,
+  .vn-check__input[type="checkbox"]:indeterminate {
+    background-color: var(--vn-text);
+    border-color: var(--vn-text);
+  }
+
+  .vn-check__input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 11px;
+    border-right: 2px solid var(--vn-surface);
+    border-bottom: 2px solid var(--vn-surface);
+    transform: rotate(45deg);
+  }
+
+  .vn-check__input[type="checkbox"]:indeterminate::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 10px;
+    height: 2px;
+    background-color: var(--vn-surface);
+  }
+
+  .vn-check__input[type="radio"] {
+    border-radius: var(--vn-radius-round);
+  }
+
+  .vn-check__input[type="radio"]:checked {
+    border-color: var(--vn-text);
+    border-width: 2px;
+    background-image: radial-gradient(circle, var(--vn-signal) 0 4px, transparent 4.5px);
+  }
+
+  .vn-check__input[aria-invalid="true"] {
+    border-color: var(--vn-field-border-invalid);
+    border-width: 2px;
+  }
+
+  .vn-check__input:focus-visible {
+    outline-offset: 2px;
+  }
+
+  .vn-check__input:disabled {
+    cursor: not-allowed;
+  }
+
+  .vn-check:has(:disabled) {
+    opacity: var(--vn-opacity-disabled);
+    cursor: not-allowed;
+  }
+
+  .vn-check__label {
+    font-size: var(--vn-type-body-sm-size);
+    line-height: var(--vn-type-body-sm-line-height);
+  }
+
+  .vn-fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: var(--vn-space-1);
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .vn-fieldset > legend {
+    padding: 0;
+    margin-block-end: var(--vn-space-2);
+    font-family: var(--vn-type-label-family);
+    font-size: var(--vn-type-label-size);
+    font-weight: var(--vn-type-label-weight);
+    letter-spacing: var(--vn-type-label-tracking);
+    text-transform: var(--vn-type-label-transform);
+    color: var(--vn-text-muted);
+  }
+}

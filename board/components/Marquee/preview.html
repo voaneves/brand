@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marquee — voaneves brand board</title>
+  <link rel="stylesheet" href="../../../dist/css/all.css" />
+</head>
+<body>
+  <main class="vn-section">
+    <div class="vn-marquee" data-marquee>
+      <div class="vn-marquee__track vn-type-tag">
+        <span>Java</span><span>Laravel</span><span>Angular</span><span>Astro</span><span>BI</span>
+        <span aria-hidden="true">Java</span><span aria-hidden="true">Laravel</span><span aria-hidden="true">Angular</span><span aria-hidden="true">Astro</span><span aria-hidden="true">BI</span>
+      </div>
+    </div>
+    <script type="module">
+      import { initMarquee } from '../../../dist/js/marquee.js';
+      initMarquee();
+    </script>
+  </main>
+</body>
+</html>

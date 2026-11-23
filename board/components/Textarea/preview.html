@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Textarea — voaneves brand board</title>
+  <link rel="stylesheet" href="../../../dist/css/all.css" />
+</head>
+<body>
+  <main class="vn-section vn-container" style="display:grid;gap:24px;max-width:520px;">
+    <div class="vn-field">
+      <label class="vn-field__label" for="t1">Mensagem <span class="vn-field__required" aria-hidden="true">*</span></label>
+      <span class="vn-field__hint" id="t1h">Respondo em até 1 dia útil.</span>
+      <textarea class="vn-field__input" id="t1" aria-describedby="t1h" required></textarea>
+    </div>
+    <div class="vn-field">
+      <label class="vn-field__label" for="t2">Mensagem</label>
+      <textarea class="vn-field__input" id="t2" aria-invalid="true" aria-describedby="t2e"></textarea>
+      <span class="vn-field__error" id="t2e">Escreva uma mensagem para enviar.</span>
+    </div>
+    <div class="vn-field">
+      <label class="vn-field__label" for="t3">Desativado</label>
+      <textarea class="vn-field__input" id="t3" disabled>Campo indisponível.</textarea>
+    </div>
+  </main>
+</body>
+</html>

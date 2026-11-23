@@ -140,11 +140,20 @@ The type scale defines **19 `.vn-type-*` styles** (`Display`, `Text`, `Label`) a
 
 Requires **Node.js `>=24`** (see [`.nvmrc`](.nvmrc)). Because `dist/` is gitignored and built from source, run the build before executing the test suite:
 
-```bash
-npm ci
-npm run build
-npm test
-```
+- `tokens/src/`: DTCG token sources (single source of truth)
+- `css/src/`: reset, base and `.vn-*` component CSS
+- `js/src/`: vanilla ES modules (cursor, reveal, theme, ...)
+- `astro/`: Astro components shipped as source
+- `fonts/`: font sources and subsetted woff2 files
+- `icons/`: normalized SVG icons
+- `logo/`: mark, wordmark and lockups
+- `app-icons/`: favicon, touch and PWA icons
+- `motifs/`: decorative SVG waves
+- `board/`: sources for the visual board
+- `docs/`: decisions (ADRs), component specs, checklists, [README spec](docs/readme-spec.md)
+- `templates/`: Word, PowerPoint, Excel, Open Graph image and email signature templates ([README](templates/README.md))
+- `scripts/`: build scripts
+- `tests/`: contrast, board, icon and font tests
 
 Automated checks executed by `npm test` (`node --test tests/*.test.js && npm run check:exports`):
 
@@ -156,27 +165,34 @@ Automated checks executed by `npm test` (`node --test tests/*.test.js && npm run
 | [`tests/icons.test.js`](tests/icons.test.js) | Verifies 19 normalized `1024x1024` `currentColor` SVGs, `sprite.svg` symbols, `dist/app-icons/`, and `dist/logo/` assets. |
 | [`tests/exports.test.js`](tests/exports.test.js) & [`scripts/check-exports.mjs`](scripts/check-exports.mjs) | Verifies all 15 `package.json` export entries resolve to non-empty files, zero `--vn-ref-` leaks in `components.css`, `cursor.js <= 1.5 KB` gzip, Astro components, `credit.html`, and 14 board chapters / 7 previews. |
 
----
+Tailwind CSS v4: map utilities to the tokens (`bg-surface`, `text-signal-ink`, `font-display`, `text-h2`, `rounded-xl`, `shadow-pop`).
 
-## Repository Map
+```css
+@import "tailwindcss";
+@import "@voaneves/brand/css/all.css";
+@import "@voaneves/brand/tailwind/theme.css";
+```
 
-| Path | Contents |
-|---|---|
-| `tokens/src/` | 3-tier DTCG token sources (`ref/`, `sys/`, `component/`) |
-| `css/src/` | Reset, base, and `.vn-*` component CSS sources |
-| `js/src/` | 6 zero-dependency ES modules (`cursor`, `journey`, `magnetic`, `marquee`, `reveal`, `theme`) |
-| `astro/` | `Logo.astro`, `Icon.astro`, and `Credit.astro` source components |
-| `fonts/` | Subsetted `.woff2` font files and `OFL-*.txt` license notices |
-| `icons/` | 19 normalized source SVGs (`svg/`) and per-icon attribution (`icons/LICENSES.md`) |
-| `logo/` | Canonical Concept B (Sinal) SVG marks, wordmarks, and lockups |
-| `app-icons/` | Source SVG favicon and pre-generated `.ico` / `.png` PWA and touch icons |
-| `motifs/` | Auxiliary decorative SVG wave dividers |
-| `board/` | Source chapters (`01`–`14`) and component HTML previews for the visual board |
-| `docs/` | ADRs (`docs/decisions/`), logo guide (`docs/03-logo.md`), token spec (`docs/spec-values.md`), a11y checklist (`docs/a11y-checklist.md`), component docs, and positioning source (`docs/perfil-tecnico.md`) |
-| `scripts/` | Build scripts for tokens, fonts, icons, CSS, board, and export verification |
-| `tests/` | Automated contrast, board grammar, font budget, icon, and export tests |
+## Use with Claude Code
 
----
+This repo is also a Claude Code plugin marketplace. The `voaneves-design-system` plugin gives Claude the tokens, type scale, logo rules and accessibility checks for building in this brand.
+
+```
+/plugin marketplace add voaneves/brand
+/plugin install voaneves-design-system@voaneves
+```
+
+## Links
+
+- [PLAN.md](PLAN.md)
+- [docs/decisions/](docs/decisions/)
+- [docs/voice-and-tone.md](docs/voice-and-tone.md): voice, tone and writing rules (PT/EN)
+- [docs/data-viz.md](docs/data-viz.md): chart palettes (categorical, sequential, diverging)
+- [docs/components/](docs/components/README.md) and [docs/patterns/](docs/patterns/forms.md): component specs and forms, states and navigation patterns
+- [CONTRIBUTING.md](CONTRIBUTING.md), [docs/governance/deprecation.md](docs/governance/deprecation.md), [docs/governance/naming.md](docs/governance/naming.md): how to contribute, deprecate and name things
+- [docs/readme-spec.md](docs/readme-spec.md): README layout rules for VOANEVES project repos
+- Gallery (tokens, type, every component, theme toggle): https://voaneves.github.io/brand/
+- Visual board: https://claude.ai/artifact/AhRNUHwhFocY2hyB45j3Mr (private until shared)
 
 ## Licensing
 

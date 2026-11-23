@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tabs — voaneves brand board</title>
+  <link rel="stylesheet" href="../../../dist/css/all.css" />
+</head>
+<body>
+  <main class="vn-section vn-container">
+    <div class="vn-tabs">
+      <div class="vn-tabs__list" role="tablist" aria-label="Serviços">
+        <button class="vn-tabs__tab" role="tab" id="t-1" aria-controls="p-1" aria-selected="true" type="button">Sites</button>
+        <button class="vn-tabs__tab" role="tab" id="t-2" aria-controls="p-2" aria-selected="false" tabindex="-1" type="button">Dashboards</button>
+        <button class="vn-tabs__tab" role="tab" id="t-3" aria-controls="p-3" aria-selected="false" tabindex="-1" type="button">Manutenção</button>
+      </div>
+      <div class="vn-tabs__panel" role="tabpanel" id="p-1" aria-labelledby="t-1" tabindex="0"><p>Sites sob medida, com domínio e hospedagem.</p></div>
+      <div class="vn-tabs__panel" role="tabpanel" id="p-2" aria-labelledby="t-2" tabindex="0" hidden><p>Dashboards e BI para decisões do dia a dia.</p></div>
+      <div class="vn-tabs__panel" role="tabpanel" id="p-3" aria-labelledby="t-3" tabindex="0" hidden><p>Manutenção de site com prazo de resposta combinado.</p></div>
+    </div>
+    <script>
+      const tabs = [...document.querySelectorAll('[role=tab]')];
+      const show = (t) => {
+        tabs.forEach((x) => {
+          const on = x === t;
+          x.setAttribute('aria-selected', on);
+          x.tabIndex = on ? 0 : -1;
+          document.getElementById(x.getAttribute('aria-controls')).hidden = !on;
+        });
+        t.focus();
+      };
+      tabs.forEach((t, i) => {
+        t.addEventListener('click', () => show(t));
+        t.addEventListener('keydown', (e) => {
+          const k = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+          if (k === undefined) return;
+          e.preventDefault();
+          show(tabs[(k + tabs.length) % tabs.length]);
+        });
+      });
+    </script>
+  </main>
+</body>
+</html>

@@ -18,5 +18,8 @@ test('dist/board manifest lists all 14 chapters and component previews', async (
     await fs.readFile(path.join(ROOT, 'dist', 'board', 'index.json'), 'utf8'),
   );
   assert.equal(manifest.chapters.length, 14);
-  assert.equal(manifest.previews.length, 7);
+  const dirs = (await fs.readdir(path.join(ROOT, 'board', 'components'), { withFileTypes: true }))
+    .filter((d) => d.isDirectory());
+  assert.ok(dirs.length >= 17);
+  assert.equal(manifest.previews.length, dirs.length);
 });

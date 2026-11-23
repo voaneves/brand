@@ -6,15 +6,15 @@ A paleta opera com adaptação nativa via `light-dark()` e atributo `data-theme=
 
 | Token | Papel | Modo Claro | Modo Escuro |
 |---|---|---|---|
-| `--vn-surface` | Superfície base | `#fff8f8` | `#0a0a0a` |
-| `--vn-surface-soft` | Superfície secundária | `#f7eded` | `#121111` |
-| `--vn-surface-raised` | Superfície elevada | `#ffffff` | `#161616` |
-| `--vn-surface-inverse` | Bloco invertido | `#0a0a0a` | `#050505` |
+| `--vn-surface` | Superfície base | `#f4ead4` | `#0a0a0a` |
+| `--vn-surface-soft` | Superfície secundária | `#efe4c5` | `#141414` |
+| `--vn-surface-raised` | Superfície elevada | `#ffffff` | `#1a1a1a` |
+| `--vn-surface-inverse` | Bloco invertido | `#0a0a0a` | `#000000` |
 | `--vn-surface-signal` | Destaque de ação | `#f50000` | `#ff3838` |
-| `--vn-text` | Texto primário | `#0a0a0a` | `#f5ecec` |
-| `--vn-text-muted` | Texto secundário | sand-800 | sand-500 |
+| `--vn-text` | Texto primário | `#0a0a0a` | `#e8dec5` |
+| `--vn-text-muted` | Texto secundário | `#5c5446` | `#a69c86` |
 | `--vn-text-on-signal` | Texto sobre sinal | `#0a0a0a` | `#0a0a0a` |
-| `--vn-signal-ink` | Sinal acessível em texto | red-800 | red-400 |
+| `--vn-signal-ink` | Sinal acessível em texto | `#b80000` | `#ff5a5a` |
 
 ## Regras de Contraste
 

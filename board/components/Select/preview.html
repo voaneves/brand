@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Select — voaneves brand board</title>
+  <link rel="stylesheet" href="../../../dist/css/all.css" />
+</head>
+<body>
+  <main class="vn-section vn-container" style="display:grid;gap:24px;max-width:420px;">
+    <div class="vn-field">
+      <label class="vn-field__label" for="s1">Tipo de projeto</label>
+      <div class="vn-select">
+        <select class="vn-field__input" id="s1"><option>Site</option><option>App</option><option>Dashboard</option></select>
+      </div>
+    </div>
+    <div class="vn-field">
+      <label class="vn-field__label" for="s2">Orçamento</label>
+      <div class="vn-select">
+        <select class="vn-field__input" id="s2" aria-invalid="true" aria-describedby="s2e"><option value="">Escolha uma faixa</option></select>
+      </div>
+      <span class="vn-field__error" id="s2e">Escolha uma faixa de orçamento.</span>
+    </div>
+    <div class="vn-field">
+      <label class="vn-field__label" for="s3">Desativado</label>
+      <div class="vn-select"><select class="vn-field__input" id="s3" disabled><option>Indisponível</option></select></div>
+    </div>
+  </main>
+</body>
+</html>

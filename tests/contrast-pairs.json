@@ -36,7 +36,16 @@
     { "fg": "button-signal-fg", "bg": "button-signal-bg", "min": 4.5, "themes": ["light", "dark"] },
     { "fg": "button-signal-fg-hover", "bg": "button-signal-bg-hover", "min": 4.5, "themes": ["light", "dark"] },
     { "fg": "button-primary-fg", "bg": "button-primary-bg", "min": 4.5, "themes": ["light", "dark"] },
-    { "fg": "button-primary-fg-hover", "bg": "button-primary-bg-hover", "min": 4.5, "themes": ["light", "dark"] }
+    { "fg": "button-primary-fg-hover", "bg": "button-primary-bg-hover", "min": 4.5, "themes": ["light", "dark"] },
+    { "fg": "viz-1", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
+    { "fg": "viz-2", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
+    { "fg": "viz-3", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
+    { "fg": "viz-seq-3", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
+    { "fg": "viz-seq-4", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
+    { "fg": "viz-seq-5", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
+    { "fg": "viz-div-neg-2", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
+    { "fg": "viz-div-pos-2", "bg": "surface", "min": 3, "themes": ["light", "dark"] },
+    { "fg": "surface", "bg": "text", "min": 3, "themes": ["light", "dark"] }
   ],
   "banned": [
     { "fg": "ref-white", "bg": "surface-signal", "max": 4.5, "themes": ["light", "dark"], "note": "White must stay below 4.5:1 on Sinal" },

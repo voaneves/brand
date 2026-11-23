@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tooltip — voaneves brand board</title>
+  <link rel="stylesheet" href="../../../dist/css/all.css" />
+</head>
+<body>
+  <main class="vn-section vn-container" style="padding-top:96px;">
+    <span class="vn-tooltip">
+      <button class="vn-icon-btn" type="button" aria-label="Copiar link" aria-describedby="tip1">⧉</button>
+      <span class="vn-tooltip__content" role="tooltip" id="tip1">Copiar link</span>
+    </span>
+    <script type="module">
+      import { initTooltip } from '../../../dist/js/tooltip.js';
+      initTooltip();
+    </script>
+  </main>
+</body>
+</html>

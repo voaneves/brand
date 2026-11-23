@@ -19,7 +19,7 @@ The canonical mark for **voaneves** is **Concept B — Sinal**, a geometric disc
 ## Color Variants
 
 - **Standard (Light surface):** Ink `#0a0a0a` disc + signal dot `#f50000`.
-- **Reverse (Dark surface):** White `#ffffff` disc + signal dot `#f50000`.
+- **Reverse (Dark surface):** Cream `#f4ead4` disc + signal dot `#f50000`.
 - **Monochrome (`mono`):** Uses `currentColor` for single-color embossing, stamps, or constrained surfaces.
 
 ## Canonical Asset Inventory (`logo/`)

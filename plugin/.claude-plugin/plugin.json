@@ -1,0 +1,11 @@
+{
+  "name": "voaneves-design-system",
+  "version": "1.0.0",
+  "description": "VOANEVES design system skill: color and type tokens, verified contrast pairs, logo rules, motion, accessibility and document templates.",
+  "author": {
+    "name": "Victor Neves"
+  },
+  "homepage": "https://github.com/voaneves/brand",
+  "repository": "https://github.com/voaneves/brand",
+  "license": "MIT"
+}
