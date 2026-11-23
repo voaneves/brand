@@ -16,6 +16,19 @@ Pill, label type. Variants `--primary`, `--secondary`, `--signal`, `--ghost`; si
 ## Other components
 
 - `.vn-chip` (32px pill), `.vn-icon-btn` (44px), `.vn-field` (border `--vn-line-strong`, invalid border `--vn-signal-ink`), `.vn-navbar`, `.vn-drawer`, `.vn-status-pill` (8px signal dot, pulse 3x 1600ms), `.vn-service-card`, `.vn-stat-card`, `.vn-timeline-item`, `.vn-work-row`, `.vn-marquee`, `.vn-credit`, `.vn-cursor` (custom cursor, disabled under reduced motion).
+## States and content
+
+- `.vn-skeleton` (`--text|--block|--circle`, aria-hidden, shimmer 3x then stops; region `aria-busy`); `.vn-empty` (`__title/__body/__actions`); `.vn-badge` (`--solid|--signal`, text carries meaning); `label.vn-switch > input.vn-switch__input[role=switch]`; `progress.vn-progress` (always labelled); `.vn-accordion > details.vn-accordion__item > summary.vn-accordion__summary + .vn-accordion__panel`.
+
+## Navigation
+
+- Drawer: `button[data-drawer-open][aria-controls]` + `aside.vn-drawer[hidden]` outside the navbar; `initDrawer()` from `@voaneves/brand/js/drawer.js` gives Esc, focus trap, inert page, focus return.
+
+- `nav > ol.vn-breadcrumb > li > a` (current: `span[aria-current=page]`); `nav > ul.vn-pagination > li > a` (current `aria-current=page`, `.vn-pagination__gap` for the ellipsis, real links); `footer.vn-footer > .vn-footer__inner` with `.vn-footer__title`, `.vn-footer__list`, `.vn-footer__link`, `.vn-footer__meta`.
+
+- Content: `.vn-chip` (tag, non-interactive), `.vn-work-row`, `.vn-timeline-item` (in an `ol`), `.vn-marquee[data-marquee]` (decorative, duplicate half aria-hidden), `.vn-cursor` (aria-hidden, desktop only, `initCursor()`).
+- Contributing a component: spec from `docs/components/_template.md` + preview + contrast pairs; every `.vn-*` block needs both (tested). Naming: `docs/governance/naming.md`.
+
 ## Form controls
 
 - `.vn-field` + `.vn-field__label`, `.vn-field__input` (input, `textarea.vn-field__input`), `.vn-field__hint`, `.vn-field__error`, `.vn-field__required`. Invalid: `aria-invalid="true"` (2px `--vn-signal-ink` border) + `aria-describedby` to the error.
@@ -26,7 +39,7 @@ Pill, label type. Variants `--primary`, `--secondary`, `--signal`, `--ghost`; si
 ## Feedback
 
 - `.vn-alert` (`role=status`) with `.vn-alert__title/__body/__close`; `--error` uses a Sinal rule and signal-ink title (`role=alert`). No green or amber: meaning comes from the title text.
-- `.vn-toast` inside `.vn-toast-region[aria-live=polite]`: inverse surface, one action max, 6 s, pause on hover/focus, never for errors.
+- `.vn-toast` inside `.vn-toast-region[aria-live=polite]`: inverse surface, one action max, 6 s, pause on hover/focus, never for errors. `createToaster()` from `@voaneves/brand/js/toast.js` handles the region, max 2 visible plus a queue, and the pausing.
 
 ## Structure
 

@@ -102,6 +102,8 @@ Descrição para busca (meta description, até 155 caracteres):
 | Pós-graduação em BI, Big Data e Inteligência Artificial | Faculdade Focus | 2023–2024 |
 | Engenharia Mecânica | UNICAMP | 2012–2018 |
 
+> **Nota de reconciliação (`voaneves/site`):** O site `voaneves.com` (`src/data/portfolio.ts`) lista também `Pós-graduação em Análise de Sistemas | Faculdade Focus | Dez 2023–Mai 2024` ao lado de `IA, BI e Big Data | Jul 2023–Nov 2023`. Aguarda confirmação para definir se deve constar como linha separada nesta tabela (e ser refletida nas seções `Sobre` do LinkedIn) ou permanecer consolidada em `2023–2024`.
+
 ## Certificações
 
 | Área | Certificação |

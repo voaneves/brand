@@ -1,0 +1,176 @@
+import test, { after, before } from 'node:test';
+import assert from 'node:assert/strict';
+import { startServer, launch, newPage, previewUrl } from './helpers.js';
+
+let browser;
+let server;
+before(async () => {
+  server = await startServer();
+  browser = await launch();
+});
+after(async () => {
+  await browser?.close();
+  server?.close();
+});
+
+async function open(name, options) {
+  const page = await newPage(browser, options);
+  await page.goto(previewUrl(name));
+  return page;
+}
+
+test('tabs: roving tabindex, arrows, Home/End and focus moves to the panel', async () => {
+  const page = await open('Tabs');
+  const state = () =>
+    page.$$eval('[role=tab]', (tabs) => tabs.map((t) => [t.getAttribute('aria-selected'), t.tabIndex]));
+  assert.deepEqual(await state(), [['true', 0], ['false', -1], ['false', -1]]);
+
+  await page.focus('#t-1');
+  await page.keyboard.press('ArrowRight');
+  assert.deepEqual(await state(), [['false', -1], ['true', 0], ['false', -1]]);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 't-2');
+  assert.equal(await page.$eval('#p-2', (p) => p.hidden), false);
+  assert.equal(await page.$eval('#p-1', (p) => p.hidden), true);
+
+  await page.keyboard.press('End');
+  assert.equal(await page.evaluate(() => document.activeElement.id), 't-3');
+  await page.keyboard.press('ArrowRight'); // wraps to first
+  assert.equal(await page.evaluate(() => document.activeElement.id), 't-1');
+  await page.keyboard.press('ArrowLeft'); // wraps to last
+  assert.equal(await page.evaluate(() => document.activeElement.id), 't-3');
+  await page.keyboard.press('Home');
+  assert.equal(await page.evaluate(() => document.activeElement.id), 't-1');
+
+  await page.keyboard.press('Tab');
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'p-1');
+  await page.context().close();
+});
+
+test('modal: opens, traps focus, closes on Esc and returns focus to the trigger', async () => {
+  const page = await open('Modal');
+  await page.focus('#open');
+  await page.keyboard.press('Enter');
+  assert.equal(await page.$eval('#dlg', (d) => d.open), true);
+  assert.equal(await page.evaluate(() => document.activeElement.textContent.trim()), 'Cancelar');
+
+  for (let i = 0; i < 6; i += 1) {
+    await page.keyboard.press('Tab');
+    // Native modal dialogs cycle through the browser UI, so body is allowed; page content never is.
+    const ok = await page.evaluate(
+      () => document.activeElement === document.body || document.getElementById('dlg').contains(document.activeElement),
+    );
+    assert.ok(ok, `focus escaped the dialog on Tab #${i + 1}`);
+  }
+  await page.keyboard.press('Shift+Tab');
+  assert.equal(await page.$eval('#open', (b) => b === document.activeElement), false, 'trigger behind the modal got focus');
+
+  await page.keyboard.press('Escape');
+  assert.equal(await page.$eval('#dlg', (d) => d.open), false);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'open');
+  await page.context().close();
+});
+
+test('tooltip: shows on focus and Escape dismisses it without moving focus', async () => {
+  const page = await open('Tooltip');
+  const visible = () => page.$eval('#tip1', (el) => getComputedStyle(el).visibility === 'visible');
+  assert.equal(await visible(), false);
+  await page.keyboard.press('Tab');
+  await page.waitForTimeout(400);
+  assert.equal(await visible(), true);
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(400);
+  assert.equal(await visible(), false);
+  assert.equal(await page.evaluate(() => document.activeElement.tagName), 'BUTTON');
+  await page.context().close();
+});
+
+test('reduced motion: duration tokens collapse to 1ms and transitions are effectively off', async () => {
+  const page = await open('Toast', { reducedMotion: 'reduce' });
+  const tokens = await page.evaluate(() => {
+    const cs = getComputedStyle(document.documentElement);
+    return ['--vn-dur-press', '--vn-dur-hover', '--vn-dur-cursor', '--vn-dur-line', '--vn-dur-unveil', '--vn-dur-page'].map(
+      (n) => cs.getPropertyValue(n).trim(),
+    );
+  });
+  assert.deepEqual(tokens, Array(6).fill('1ms'));
+  const dur = await page.$eval('.vn-toast', (el) => getComputedStyle(el).transitionDuration);
+  assert.ok(dur.split(',').every((d) => parseFloat(d) <= 0.001), `toast transition-duration is ${dur}`);
+  await page.context().close();
+
+  const normal = await open('Toast');
+  const fullDur = await normal.$eval('.vn-toast', (el) => getComputedStyle(el).transitionDuration);
+  assert.ok(parseFloat(fullDur) >= 0.25, `expected 250ms without the preference, got ${fullDur}`);
+  await normal.context().close();
+});
+
+test('drawer: opens with focus inside, traps Tab, makes the page inert, closes on Esc and returns focus', async () => {
+  const page = await open('NavBar', { viewport: { width: 600, height: 800 } });
+  const active = () => page.evaluate(() => document.activeElement.getAttribute('aria-label') ?? document.activeElement.textContent.trim());
+  assert.equal(await page.$eval('#drawer', (d) => d.hidden), true);
+  assert.equal(await page.$eval('#menu', (b) => b.getAttribute('aria-expanded')), 'false');
+
+  await page.focus('#menu');
+  await page.keyboard.press('Enter');
+  assert.equal(await page.$eval('#drawer', (d) => d.hidden), false);
+  assert.equal(await page.$eval('#menu', (b) => b.getAttribute('aria-expanded')), 'true');
+  assert.equal(await active(), 'Fechar menu');
+  assert.equal(await page.$eval('main', (m) => m.inert), true);
+  assert.equal(await page.$eval('header', (h) => h.inert), true);
+
+  // 4 focusables (close + 3 links): Tab wraps; Shift+Tab from the first goes to the last.
+  for (let i = 0; i < 4; i += 1) await page.keyboard.press('Tab');
+  assert.equal(await active(), 'Fechar menu');
+  await page.keyboard.press('Shift+Tab');
+  assert.match(await active(), /^Sobre/);
+  await page.keyboard.press('Tab');
+  assert.equal(await active(), 'Fechar menu');
+
+  await page.keyboard.press('Escape');
+  assert.equal(await page.$eval('#drawer', (d) => d.hidden), true);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'menu');
+  assert.equal(await page.$eval('#menu', (b) => b.getAttribute('aria-expanded')), 'false');
+  assert.equal(await page.$eval('main', (m) => m.inert), false);
+
+  // choosing an in-page link also closes it and restores focus
+  await page.keyboard.press('Enter');
+  await page.keyboard.press('Tab');
+  await page.keyboard.press('Enter');
+  assert.equal(await page.$eval('#drawer', (d) => d.hidden), true);
+  assert.equal(await page.evaluate(() => document.activeElement.id), 'menu');
+  await page.context().close();
+});
+
+test('reduced motion: drawer and modal transitions collapse', async () => {
+  const page = await open('NavBar', { reducedMotion: 'reduce' });
+  const drawer = await page.$eval('#drawer', (d) => getComputedStyle(d).transitionDuration);
+  assert.ok(drawer.split(',').every((d) => parseFloat(d) <= 0.001), `drawer transition-duration is ${drawer}`);
+  await page.context().close();
+});
+
+test('switch and accordion: toggle with the keyboard', async () => {
+  const sw = await open('Switch');
+  await sw.focus('.vn-switch__input');
+  assert.equal(await sw.$eval('.vn-switch__input', (i) => i.checked), true);
+  await sw.keyboard.press('Space');
+  assert.equal(await sw.$eval('.vn-switch__input', (i) => i.checked), false);
+  await sw.context().close();
+
+  const acc = await open('Accordion');
+  const items = () => acc.$$eval('details', (d) => d.map((x) => x.open));
+  assert.deepEqual(await items(), [true, false]);
+  await acc.focus('details:nth-of-type(2) > summary');
+  await acc.keyboard.press('Enter');
+  assert.deepEqual(await items(), [true, true]);
+  await acc.keyboard.press('Space');
+  assert.deepEqual(await items(), [true, false]);
+  await acc.context().close();
+});
+
+test('reduced motion: skeleton shimmer is off', async () => {
+  const page = await open('Skeleton', { reducedMotion: 'reduce' });
+  assert.equal(await page.$eval('.vn-skeleton', (el) => getComputedStyle(el).animationName), 'none');
+  await page.context().close();
+  const normal = await open('Skeleton');
+  assert.notEqual(await normal.$eval('.vn-skeleton', (el) => getComputedStyle(el).animationName), 'none');
+  await normal.context().close();
+});
