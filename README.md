@@ -3,9 +3,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./logo/mark-reverse.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./logo/mark.svg" />
-  <img alt="@voaneves/brand — VOANEVES. Concept B (Sinal) mark" src="./logo/mark.svg" width="112" height="112" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/logo/mark-reverse.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/logo/mark.svg" />
+  <img alt="@voaneves/brand — VOANEVES. Concept B (Sinal) mark" src="https://raw.githubusercontent.com/voaneves/brand/main/logo/mark.svg" width="112" height="112" />
 </picture>
 
 <h1>@voaneves/brand</h1>
@@ -16,6 +16,11 @@
     Single source of truth for <a href="https://voaneves.com">voaneves.com</a> &amp; all VOANEVES projects —
     <kbd>W3C DTCG</kbd> · <kbd>Style Dictionary v5</kbd> · <kbd>WCAG 2.2 AA</kbd> · <kbd>Playwright + axe-core</kbd>
   </sub>
+</p>
+
+<p>
+  <a href="https://voaneves.github.io/brand/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/assets/buttons/gallery-dark.svg" /><img alt="View gallery" src="https://raw.githubusercontent.com/voaneves/brand/main/assets/buttons/gallery-light.svg" height="40" /></picture></a>
+  <a href="#distribution"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/assets/buttons/npm-dark.svg" /><img alt="npm i @voaneves/brand" src="https://raw.githubusercontent.com/voaneves/brand/main/assets/buttons/npm-light.svg" height="40" /></picture></a>
 </p>
 
 <p><sub>Need a design system like this? <a href="https://voaneves.com/en/#contact"><strong>Let's talk →</strong></a></sub></p>
@@ -40,9 +45,9 @@
 </div>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/brand/rule-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/brand/rule-light.svg" />
-  <img alt="" src="./assets/brand/rule-light.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/assets/brand/rule-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/assets/brand/rule-light.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/voaneves/brand/main/assets/brand/rule-light.svg" width="100%" />
 </picture>
 
 <a id="distribution"></a>
@@ -106,9 +111,9 @@ This repository ships a Claude Code plugin marketplace exposing the `voaneves-de
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./logo/lockup-horizontal-reverse.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./logo/lockup-horizontal.svg" />
-    <img alt="VOANEVES. — Concept B horizontal lockup" src="./logo/lockup-horizontal.svg" width="320" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/logo/lockup-horizontal-reverse.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/logo/lockup-horizontal.svg" />
+    <img alt="VOANEVES. — Concept B horizontal lockup" src="https://raw.githubusercontent.com/voaneves/brand/main/logo/lockup-horizontal.svg" width="320" />
   </picture>
 </div>
 
@@ -219,20 +224,19 @@ This repository uses mixed per-asset licensing (complete manifest in [`LICENSES.
 ## Contact
 
 <p>
-  <a href="https://voaneves.com/en/#contact"><strong>Let's talk →</strong></a> ·
-  <a href="https://voaneves.com/en/"><strong>voaneves.com</strong></a> ·
-  <a href="https://voaneves.github.io/brand/"><strong>Live Gallery</strong></a> ·
-  <a href="https://www.linkedin.com/in/voaneves/">LinkedIn</a> ·
-  <a href="mailto:victorneves478@gmail.com">E-mail</a>
+  <a href="https://voaneves.com/en/#contact"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/assets/buttons/hire-dark.svg" /><img alt="Let's talk" src="https://raw.githubusercontent.com/voaneves/brand/main/assets/buttons/hire-light.svg" height="40" /></picture></a>
+  <a href="https://voaneves.com/en/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/assets/buttons/site-dark.svg" /><img alt="voaneves.com" src="https://raw.githubusercontent.com/voaneves/brand/main/assets/buttons/site-light.svg" height="40" /></picture></a>
 </p>
 
+<a href="https://www.linkedin.com/in/voaneves/">LinkedIn</a> · <a href="mailto:victorneves478@gmail.com">E-mail</a>
+
 <div align="center">
-  <img alt="VOANEVES mark" src="./assets/brand/mark-duo.svg" width="32" height="32" />
+  <img alt="VOANEVES mark" src="https://raw.githubusercontent.com/voaneves/brand/main/assets/brand/mark-duo.svg" width="32" height="32" />
 </div>
 
 <p align="center"><sub>Code licensed under <a href="./LICENSE">MIT</a> (see <a href="./LICENSES.md">LICENSES.md</a> for mixed asset rights) © 2026 <a href="https://github.com/voaneves">Victor Neves</a> · <strong>VOANEVES.</strong></sub></p>
 
-<p align="right"><a href="#top">↑ Back to top</a></p>
+<p align="center"><sub><a href="#top">↑ Back to top</a></sub></p>
 
 [^1]: Every semantic and inverse contrast pair is also auditable against W3C DTCG 2025.10 directly via [`dtcg-contrast`](https://github.com/voaneves/dtcg-contrast).
 

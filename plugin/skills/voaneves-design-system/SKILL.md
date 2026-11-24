@@ -145,7 +145,7 @@ Forms (label above, hint, validate on submit then blur, `aria-invalid` + error t
 
 ## READMEs
 
-Project READMEs follow the README spec: centered hero with logo, one tagline, at most 2 CTAs, one hire line, at most 4 badges, one divider, no emoji in headings, tables up to 4 columns, contact section and footer. Full rules: https://github.com/voaneves/brand/blob/main/docs/readme-spec.md
+Project READMEs follow the README spec: centered hero with logo, one tagline, at most 2 CTAs, one hire line, at most 4 badges, one divider, no emoji in headings, tables up to 4 columns, contact section and footer. Each product keeps its own standalone unique logo (do not force a uniform VOANEVES logo frame onto products), while standardizing the README layout. Full rules: https://github.com/voaneves/brand/blob/main/docs/readme-spec.md
 
 ## Document templates
 

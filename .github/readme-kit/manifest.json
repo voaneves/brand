@@ -1,0 +1,48 @@
+{
+  "repo": "brand",
+  "branch": "main",
+  "lang": "en",
+  "license": "MIT",
+  "name": "@voaneves/brand",
+  "tagline": "Brand identity and W3C DTCG 2025.10 design system for voaneves.com.",
+  "description": "Canonical brand identity, W3C DTCG 2025.10 design tokens, layered CSS, Tailwind v4 theme, ES modules, fonts, icons, and Astro components.",
+  "logo": {
+    "existing": "logo/mark.svg"
+  },
+  "buttons": [
+    {
+      "id": "gallery",
+      "text": "View gallery",
+      "kind": "primary",
+      "font": "sans",
+      "href": "https://voaneves.github.io/brand/",
+      "landing": false
+    },
+    {
+      "id": "npm",
+      "text": "npm i @voaneves/brand",
+      "kind": "command",
+      "font": "mono",
+      "href": "https://github.com/voaneves/brand#distribution",
+      "landing": false
+    },
+    {
+      "id": "hire",
+      "text": "Let's talk",
+      "kind": "primary",
+      "font": "sans",
+      "href": "https://voaneves.com/en/#contact",
+      "landing": false
+    },
+    {
+      "id": "site",
+      "text": "voaneves.com",
+      "kind": "secondary",
+      "font": "sans",
+      "href": "https://voaneves.com/en/",
+      "landing": false
+    }
+  ],
+  "landing": false,
+  "live_url": "https://voaneves.github.io/brand/"
+}

@@ -4,7 +4,7 @@ How every public VOANEVES project README is laid out, so repos read as one famil
 
 ## Hero (centered `<div align="center">`)
 1. Language switcher only if the repo has two READMEs: plain text, no flag emoji, `lang` on the other-language link.
-2. Project logo via `<picture>` (dark/light), `width="112" height="112"`, descriptive alt.
+2. Project logo via `<picture>` (dark/light) or `<img>` (single theme-safe mark), `width="112" height="112"`, descriptive alt. Each product keeps its own standalone, unique logo (custom mark, mascot, or emblem — do not force a uniform VOANEVES logo frame onto products) so the repository is self-contained.
 3. `<h1>` project name, one bold tagline, optional `<sub>` subtitle.
 4. At most 2 CTA buttons (`<a><picture><source dark><img light height="40" alt=…></picture></a>`): usually the live demo / landing page plus one action (install, run, open notebook).
 5. One hire line: `<p><sub>Need something like this? <a href="https://voaneves.com/en/#contact"><strong>Let's talk →</strong></a></sub></p>` (PT: `Precisa de algo assim? … https://voaneves.com/#contato … Vamos conversar →`).
@@ -26,6 +26,6 @@ How every public VOANEVES project README is laid out, so repos read as one famil
 17. Footer: author mark (`assets/brand/mark-duo.svg`, visible on light and dark, no `<picture>`), license line, "↑ Back to top".
 
 ## Mechanics
-- All images use absolute `https://raw.githubusercontent.com/voaneves/<repo>/<default-branch>/…` URLs.
+- Public repos use absolute `https://raw.githubusercontent.com/voaneves/<repo>/<default-branch>/…` URLs for all images; private repos use relative `./…` paths so GitHub renders images while private.
 - Preserve line endings: `git diff --stat` shows only intended lines.
 - Do not translate single-language repos; keep the README's existing language.
