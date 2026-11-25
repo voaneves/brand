@@ -32,16 +32,6 @@
   <a href="./LICENSES.md"><img src="https://img.shields.io/badge/license-MIT_(code)-0A0A0A?style=flat-square" alt="License MIT (code)" /></a>
 </p>
 
-<p>
-  <a href="https://voaneves.github.io/brand/">Gallery</a> ·
-  <a href="#distribution">Distribution &amp; Usage</a> ·
-  <a href="#visual-identity">Visual Identity</a> ·
-  <a href="#architecture">Architecture &amp; Exports</a> ·
-  <a href="#quality-gates">Quality Gates</a> ·
-  <a href="#licensing">Licensing</a> ·
-  <a href="#contact">Contact</a>
-</p>
-
 </div>
 
 <picture>
@@ -49,6 +39,19 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/voaneves/brand/main/assets/brand/rule-light.svg" />
   <img alt="" src="https://raw.githubusercontent.com/voaneves/brand/main/assets/brand/rule-light.svg" width="100%" />
 </picture>
+
+<details>
+  <summary><strong>Contents</strong> — jump to a section</summary>
+
+- [Live Gallery](https://voaneves.github.io/brand/)
+- [Distribution &amp; Usage](#distribution)
+- [Visual Identity](#visual-identity)
+- [Architecture &amp; Package Exports](#architecture)
+- [Quality Gates &amp; Repository Map](#quality-gates)
+- [Mixed Asset Licensing](#licensing)
+- [Contact](#contact)
+
+</details>
 
 <a id="distribution"></a>
 ## Distribution &amp; Usage
